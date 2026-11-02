@@ -341,3 +341,8 @@ body.vista-movil h1 { font-size: 24px; }
 /* Ajuste de contraste del verde sobre fondo claro (AA) */
 .etiqueta.ok { color: #1f6b45; }
 .marca-op.p:has(input:checked) { color: #1f6b45; }
+/* Opciones que se despliegan según la selección */
+.sub-uniforme, .sub-encargado { display: none; }
+form:has(input[name=tipo][value=uniforme]:checked) .sub-uniforme { display: block; }
+form:has(input[name=aut][value=encargado]:checked) .sub-encargado { display: block; }
+.noti.azul .barra { background: var(--acento); }

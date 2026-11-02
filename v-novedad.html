@@ -12,19 +12,20 @@
 <div class="wf-franja"><div class="contenedor"><span>Wireframe v1.0 · Pantalla 03: Registrar novedad</span><span><a href="mapa.html">Mapa del prototipo</a> · <a href="index.html">Cambiar de rol</a></span></div></div>
 <header class="appbar"><div class="contenedor"><a class="marca" href="index.html"><span class="logo-ph">LOGO</span><span>Asistencia Colyarima<small>Colegio Integrado Yarima</small></span></a>
 <div class="usuario"><span class="rol">Vigilancia</span><span>Portería</span><span class="avatar">VP</span><a href="index.html">Salir</a></div></div></header>
-<nav class="submenu"><div class="contenedor"><ul><li><a href="v-ingreso.html">Registro de ingreso</a></li><li><a href="v-novedad.html" class="activo">Registrar novedad</a></li><li><a href="v-cierre.html">Cierre de ingreso</a></li></ul></div></nav>
+<nav class="submenu"><div class="contenedor"><ul><li><a href="v-ingreso.html">Registro de ingreso</a></li><li><a href="v-novedad.html" class="activo">Registrar novedad</a></li><li><a href="v-cierre.html">Cierre de ingreso</a></li><li><a href="v-salida.html">Salida anticipada</a></li></ul></div></nav>
 <main>
 <div class="cabecera-pagina" style="padding:18px 0 22px"><div class="contenedor"><h1 style="margin-top:0">Registrar novedad</h1><p class="subtitulo">La anotación queda en el registro del estudiante y llega al acudiente en ese momento.</p></div></div>
 <section><div class="contenedor rejilla r-2-1">
 <form class="tarjeta" action="v-ingreso.html">
-<div class="registro" style="margin-bottom:18px"><div class="img-ph"><span>Foto</span></div><div><p style="font-size:18px;font-weight:700">Samuel Ortiz Díaz</p><p class="subtitulo" style="margin:2px 0 0;font-size:14px">Grado 10°1 · Ingreso 6:58 a. m.</p></div></div>
-<div class="campo"><label>Tipo de novedad</label><div class="opciones"><label class="opcion"><input type="radio" name="tipo" value="sin-carne"> Sin carnet</label><label class="opcion"><input type="radio" name="tipo" value="tarde" checked> Llegada tarde</label><label class="opcion"><input type="radio" name="tipo" value="uniforme"> Uniforme incorrecto</label><label class="opcion"><input type="radio" name="tipo" value="otra"> Otra</label></div></div>
+<div class="registro" style="margin-bottom:18px"><div class="img-ph"><span>Foto</span></div><div><p style="font-size:18px;font-weight:700">Samuel Ortiz Díaz</p><p class="subtitulo" style="margin:2px 0 0;font-size:14px">Grado 10°1 · Ingreso 7:13 a. m.</p></div></div>
+<div class="campo"><label>Tipo de novedad</label><div class="opciones"><label class="opcion"><input type="radio" name="tipo" value="sin-carne"> Sin carnet</label><label class="opcion"><input type="radio" name="tipo" value="tarde" checked> Llegada tarde</label><label class="opcion"><input type="radio" name="tipo" value="uniforme"> Uniforme</label><label class="opcion"><input type="radio" name="tipo" value="otra"> Otra</label></div></div>
+<div class="campo sub-uniforme"><label>¿Qué falta en el uniforme?</label><div class="opciones"><label class="opcion"><input type="checkbox" name="u" value="correa"> Correa</label><label class="opcion"><input type="checkbox" name="u" value="medias"> Medias</label><label class="opcion"><input type="checkbox" name="u" value="incorrecto"> Uniforme incorrecto</label></div><p class="ayuda">Puede marcar más de una opción.</p></div>
 <div class="campo"><label for="obs">Observación (opcional)</label><textarea class="textarea input" id="obs" style="min-height:90px" placeholder="Ej.: llegó 13 minutos después del cierre"></textarea></div>
 <label class="campo check"><input type="checkbox" checked><span>Notificar al acudiente ahora</span></label>
 <div style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn" type="submit">Guardar novedad</button><a class="btn btn-sec" href="v-ingreso.html">Cancelar</a></div>
 </form>
-<aside><div class="tarjeta" style="background:var(--relleno-2)"><h3>Historial reciente</h3><p class="subtitulo" style="font-size:14px;margin:0 0 10px">Anotaciones de este estudiante en el periodo:</p><ul class="lista-simple"><li><span class="etiqueta aviso">Tarde</span> 05/11 · 6:52 a. m.</li><li><span class="etiqueta aviso">Uniforme</span> 28/10</li></ul><p style="font-size:13px;color:var(--tinta-2);margin-top:10px">Con 3 anotaciones o más, el caso aparece resaltado para coordinación.</p></div></aside>
+<aside><div class="tarjeta" style="background:var(--relleno-2)"><h3>Historial reciente</h3><p class="subtitulo" style="font-size:14px;margin:0 0 10px">Anotaciones de este estudiante en el periodo:</p><ul class="lista-simple"><li><span class="etiqueta aviso">Tarde</span> 05/11 · 7:08 a. m.</li><li><span class="etiqueta aviso">Uniforme · medias</span> 28/10</li></ul><p style="font-size:13px;color:var(--tinta-2);margin-top:10px">Con 3 anotaciones o más, el caso aparece resaltado para coordinación.</p></div></aside>
 </div></section>
 </main>
-
+<script>try{var t=new URLSearchParams(location.search).get("tipo");if(t){var r=document.querySelector('input[name=tipo][value="'+t+'"]');if(r)r.checked=true;}}catch(e){}</script>
 </body></html>

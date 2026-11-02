@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Salida anticipada · Asistencia Colyarima (wireframe)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/wireframe.css">
+</head>
+<body>
+<div class="wf-franja"><div class="contenedor"><span>Wireframe v1.0 · Pantalla 05: Salida anticipada</span><span><a href="mapa.html">Mapa del prototipo</a> · <a href="index.html">Cambiar de rol</a></span></div></div>
+<header class="appbar"><div class="contenedor"><a class="marca" href="index.html"><span class="logo-ph">LOGO</span><span>Asistencia Colyarima<small>Colegio Integrado Yarima</small></span></a>
+<div class="usuario"><span class="rol">Vigilancia</span><span>Portería</span><span class="avatar">VP</span><a href="index.html">Salir</a></div></div></header>
+<nav class="submenu"><div class="contenedor"><ul><li><a href="v-ingreso.html">Registro de ingreso</a></li><li><a href="v-novedad.html">Registrar novedad</a></li><li><a href="v-cierre.html">Cierre de ingreso</a></li><li><a href="v-salida.html" class="activo">Salida anticipada</a></li></ul></div></nav>
+<main>
+<div class="cabecera-pagina" style="padding:18px 0 22px"><div class="contenedor"><h1 style="margin-top:0">Registrar salida anticipada</h1><p class="subtitulo">Retiro del estudiante antes de terminar la jornada. Solo puede retirarlo el padre, la madre o el acudiente designado.</p></div></div>
+<section><div class="contenedor rejilla r-2-1">
+<form class="tarjeta" action="v-salida.html">
+<div class="campo"><label for="bs">Estudiante</label><input class="input" id="bs" list="estudiantes" placeholder="Escanee el carnet o escriba nombre o apellido" autocomplete="off"><datalist id="estudiantes"><option value="Ana Lucía Barrera Mora · 8°2"><option value="Camilo Andrés Duarte Rey · 8°2"><option value="Isabella Gómez Serrano · 8°2"><option value="Juan Pablo Herrera Tovar · 8°2"><option value="Laura Sofía Méndez Rueda · 8°2"><option value="Mateo Sebastián Niño Vera · 8°2"><option value="Paula Andrea Quiroga Silva · 8°2"><option value="Valentina Rojas Pinto · 8°2"><option value="Samuel Ortiz Díaz · 10°1"><option value="Kevin Andrés Cáceres León · 9°1"><option value="Daniel Esteban Vargas Quintero · 7°2"><option value="Juan José Prada Gómez · 6°2"><option value="María Fernanda Ardila Ruiz · 11°1"><option value="Mariana Rojas Pinto · 6°1"></datalist></div>
+<div class="tarjeta" style="padding:10px 14px;background:var(--acento-claro);border-color:#bcd7ec;margin:-6px 0 18px">
+<div class="fila-est" style="border:none;padding:4px 0"><span class="avatar">IG</span><div><div class="nombre">Isabella Gómez Serrano</div><div class="det">Grado 8°2 · Ingresó 6:41 a. m. · Acudiente registrado: madre</div></div><span class="etiqueta azul">Seleccionado</span></div></div>
+<div class="campo"><label>Motivo de la salida</label><div class="opciones"><label class="opcion"><input type="radio" name="motivo"> Enfermedad</label><label class="opcion"><input type="radio" name="motivo" checked> Cita médica</label><label class="opcion"><input type="radio" name="motivo"> Viaje o trámite familiar</label><label class="opcion"><input type="radio" name="motivo"> Otro</label></div></div>
+<div class="rejilla r2" style="gap:16px">
+<div class="campo"><label for="hs">Hora de salida</label><input class="input" id="hs" type="time" value="10:20"></div>
+<div class="campo"><label for="pr">Parentesco de quien retira</label><select class="input" id="pr"><option>Madre</option><option>Padre</option><option>Acudiente designado</option></select></div>
+<div class="campo"><label for="nr">Nombre de quien retira</label><input class="input" id="nr" placeholder="Nombres y apellidos"></div>
+<div class="campo"><label for="dr">Documento de quien retira</label><input class="input" id="dr" inputmode="numeric" placeholder="Número de cédula"></div>
+</div>
+<div class="campo"><label>Autorizado por</label><div class="opciones" style="flex-direction:column;align-items:stretch">
+<label class="opcion"><input type="radio" name="aut" value="rectoria"> Rectoría · Esp. Eduardo Vásquez Rueda</label>
+<label class="opcion"><input type="radio" name="aut" value="coordinacion" checked> Coordinación · Mg. Miguel Ángel Peñaloza</label>
+<label class="opcion"><input type="radio" name="aut" value="encargado"> Rector(a) encargado(a)</label>
+</div><input class="input sub-encargado" style="margin-top:8px" placeholder="Nombre de quien está encargado de la rectoría"><p class="ayuda">Los nombres de rectoría y coordinación se actualizan en la configuración del sistema.</p></div>
+<div class="campo"><label for="os">Observación (opcional)</label><input class="input" id="os" placeholder="Ej.: regresa después de la cita"></div>
+<label class="campo check"><input type="checkbox" checked><span>Notificar al acudiente y a los docentes del grupo</span></label>
+<div style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn" type="submit">Registrar salida</button><a class="btn btn-sec" href="v-ingreso.html">Cancelar</a></div>
+</form>
+<aside style="display:flex;flex-direction:column;gap:14px">
+<div class="tarjeta"><h3>Salidas de hoy</h3>
+<div class="fila-est"><span class="avatar">JP</span><div><div class="nombre">Juan Pablo Herrera Tovar · 8°2</div><div class="det">9:05 a. m. · Enfermedad · Retiró: padre · Autorizó: Coordinación</div></div><span></span></div>
+<div class="fila-est"><span class="avatar">KC</span><div><div class="nombre">Kevin Andrés Cáceres León · 9°1</div><div class="det">9:40 a. m. · Viaje o trámite familiar · Retiró: acudiente designado · Autorizó: Rectoría</div></div><span></span></div>
+</div>
+<div class="tarjeta" style="background:var(--relleno-2)"><h3>Antes de registrar</h3><ul style="padding-left:18px;font-size:14px;color:var(--tinta-2)"><li style="margin-bottom:6px">Verifique la cédula de quien retira.</li><li style="margin-bottom:6px">Si es acudiente designado, confirme que tenga el documento notariado o la declaración juramentada.</li><li>Sin autorización de rectoría o coordinación no se registra la salida.</li></ul></div>
+</aside>
+</div></section>
+</main>
+
+</body></html>

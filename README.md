@@ -16,17 +16,18 @@ Autores: Liliana Reina Garzón y Jean Carlos Sandoval Rosas
 | 02 | `v-ingreso.html` | Vigilancia | Registro de ingreso con carnet |
 | 03 | `v-novedad.html` | Vigilancia | Registrar novedad |
 | 04 | `v-cierre.html` | Vigilancia | Cierre de ingreso y alertas |
-| 05 | `a-inicio.html` | Acudiente | Inicio y notificaciones |
-| 06 | `a-notificacion.html` | Acudiente | Detalle de anotación |
-| 07 | `a-excusa.html` | Acudiente | Tramitar excusa |
-| 08 | `a-excusa-enviada.html` | Acudiente | Excusa enviada |
-| 09 | `a-historial.html` | Acudiente | Historial del estudiante |
-| 10 | `c-panel.html` | Coordinación | Panel del día |
-| 11 | `c-amonestaciones.html` | Coordinación | Amonestaciones por grupo |
-| 12 | `c-estudiante.html` | Coordinación | Ficha del estudiante |
-| 13 | `c-excusas.html` | Coordinación | Revisión de excusas |
-| 14 | `d-grupos.html` | Docente | Mis grupos |
-| 15 | `d-lista.html` | Docente | Lista de clase |
+| 05 | `v-salida.html` | Vigilancia | Salida anticipada |
+| 06 | `a-inicio.html` | Acudiente | Inicio y notificaciones |
+| 07 | `a-notificacion.html` | Acudiente | Detalle de anotación |
+| 08 | `a-excusa.html` | Acudiente | Tramitar excusa |
+| 09 | `a-excusa-enviada.html` | Acudiente | Excusa enviada |
+| 10 | `a-historial.html` | Acudiente | Historial del estudiante |
+| 11 | `c-panel.html` | Coordinación | Panel del día |
+| 12 | `c-amonestaciones.html` | Coordinación | Amonestaciones por grupo |
+| 13 | `c-estudiante.html` | Coordinación | Ficha del estudiante |
+| 14 | `c-excusas.html` | Coordinación | Revisión de excusas |
+| 15 | `d-grupos.html` | Docente | Mis grupos |
+| 16 | `d-lista.html` | Docente | Lista de clase |
 | — | `mapa.html` | — | Mapa del prototipo |
 
 ## Notas

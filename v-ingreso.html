@@ -12,20 +12,21 @@
 <div class="wf-franja"><div class="contenedor"><span>Wireframe v1.0 · Pantalla 02: Registro de ingreso</span><span><a href="mapa.html">Mapa del prototipo</a> · <a href="index.html">Cambiar de rol</a></span></div></div>
 <header class="appbar"><div class="contenedor"><a class="marca" href="index.html"><span class="logo-ph">LOGO</span><span>Asistencia Colyarima<small>Colegio Integrado Yarima</small></span></a>
 <div class="usuario"><span class="rol">Vigilancia</span><span>Portería</span><span class="avatar">VP</span><a href="index.html">Salir</a></div></div></header>
-<nav class="submenu"><div class="contenedor"><ul><li><a href="v-ingreso.html" class="activo">Registro de ingreso</a></li><li><a href="v-novedad.html">Registrar novedad</a></li><li><a href="v-cierre.html">Cierre de ingreso</a></li></ul></div></nav>
+<nav class="submenu"><div class="contenedor"><ul><li><a href="v-ingreso.html" class="activo">Registro de ingreso</a></li><li><a href="v-novedad.html">Registrar novedad</a></li><li><a href="v-cierre.html">Cierre de ingreso</a></li><li><a href="v-salida.html">Salida anticipada</a></li></ul></div></nav>
 <main>
-<div class="cabecera-pagina" style="padding:18px 0 22px"><div class="contenedor"><h1 style="margin-top:0">Registro de ingreso</h1><p class="subtitulo">Jornada de la mañana · Jueves 12 de noviembre · El ingreso se cierra a las 6:45 a. m.</p></div></div>
+<div class="cabecera-pagina" style="padding:18px 0 22px"><div class="contenedor"><h1 style="margin-top:0">Registro de ingreso</h1><p class="subtitulo">Jornada única · Jueves 12 de noviembre · El ingreso se cierra a las 7:00 a. m.</p></div></div>
 <section><div class="contenedor rejilla r2">
 <div>
 <form class="escaner" action="v-ingreso.html" method="get">
 <div class="icono-barra">▮▯▮▮▯▮▯▮▮</div>
 <p style="margin-top:8px;font-weight:600">Escanee el código de barras del carnet</p>
-<input class="input" id="cod" name="cod" autofocus placeholder="o digite el número de usuario (termina en T)" autocomplete="off">
+<input class="input" id="cod" name="cod" list="estudiantes" autofocus placeholder="o escriba nombre o apellido" autocomplete="off"><datalist id="estudiantes"><option value="Ana Lucía Barrera Mora · 8°2"><option value="Camilo Andrés Duarte Rey · 8°2"><option value="Isabella Gómez Serrano · 8°2"><option value="Juan Pablo Herrera Tovar · 8°2"><option value="Laura Sofía Méndez Rueda · 8°2"><option value="Mateo Sebastián Niño Vera · 8°2"><option value="Paula Andrea Quiroga Silva · 8°2"><option value="Valentina Rojas Pinto · 8°2"><option value="Samuel Ortiz Díaz · 10°1"><option value="Kevin Andrés Cáceres León · 9°1"><option value="Daniel Esteban Vargas Quintero · 7°2"><option value="Juan José Prada Gómez · 6°2"><option value="María Fernanda Ardila Ruiz · 11°1"><option value="Mariana Rojas Pinto · 6°1"></datalist>
+<p class="subtitulo" style="margin:8px 0 0;font-size:13px">Si no trae el carnet, búsquelo por nombre o apellido y registre la novedad <strong>Sin carnet</strong>.</p>
 <button class="btn btn-bloque" style="margin-top:10px" type="submit">Registrar ingreso</button>
 </form>
 <div class="tarjeta" style="margin-top:18px">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px"><h3 style="margin:0">Último registro</h3><span class="etiqueta ok" id="est">A tiempo · 6:38 a. m.</span></div>
-<div class="registro"><div class="img-ph"><span>Foto</span></div><div><p style="font-size:20px;font-weight:700">Valentina Rojas Pinto</p><p class="subtitulo" style="margin:2px 0 0;font-size:15px">Grado 8°2 · Usuario <span id="usr">1098765432T</span></p><p class="subtitulo" style="margin:6px 0 0;font-size:14px">Acudiente notificado del ingreso ✓</p></div></div>
+<div class="registro"><div class="img-ph"><span>Foto</span></div><div><p style="font-size:20px;font-weight:700" id="nom">Valentina Rojas Pinto</p><p class="subtitulo" style="margin:2px 0 0;font-size:15px">Grado 8°2 · Usuario 1098765432</p><p class="subtitulo" style="margin:6px 0 0;font-size:14px">Acudiente notificado del ingreso ✓</p></div></div>
 </div>
 </div>
 <div>
@@ -34,7 +35,7 @@
 <div class="botones-novedad">
 <a class="btn-novedad" href="v-novedad.html?tipo=sin-carne">Sin carnet</a>
 <a class="btn-novedad" href="v-novedad.html?tipo=tarde">Llegada tarde</a>
-<a class="btn-novedad" href="v-novedad.html?tipo=uniforme">Uniforme incorrecto</a>
+<a class="btn-novedad" href="v-novedad.html?tipo=uniforme">Uniforme</a>
 <a class="btn-novedad" href="v-novedad.html?tipo=otra">Otra novedad</a>
 </div>
 <div class="rejilla r3" style="margin-top:20px;gap:10px">
@@ -42,9 +43,9 @@
 <div class="kpi rojo"><div class="n">36</div><div class="t">Faltan por ingresar</div></div>
 <div class="kpi ambar"><div class="n">9</div><div class="t">Novedades hoy</div></div>
 </div>
-<a class="btn btn-sec btn-bloque" style="margin-top:16px" href="v-cierre.html">Ir al cierre de ingreso</a>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px"><a class="btn btn-sec" href="v-cierre.html">Cierre de ingreso</a><a class="btn btn-sec" href="v-salida.html">Salida anticipada</a></div>
 </div>
 </div></section>
 </main>
-<script>try{var c=new URLSearchParams(location.search).get("cod");if(c){document.getElementById("usr").textContent=c;}}catch(e){}</script>
+<script>try{var c=new URLSearchParams(location.search).get("cod");if(c){document.getElementById("nom").textContent=c.split(" · ")[0];}}catch(e){}</script>
 </body></html>
