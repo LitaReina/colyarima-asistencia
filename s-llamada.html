@@ -21,7 +21,7 @@
 <div class="campo"><label for="la">Acudiente y número</label><select class="input" id="la"><option>Madre · [000 000 0000]</option><option>Padre · [000 000 0000]</option></select><p class="ayuda">Desde el celular, el número se puede marcar con un toque.</p></div>
 <div class="campo"><label>Motivo</label><div class="opciones"><label class="opcion"><input type="radio" name="lm" checked> Enfermedad o malestar</label><label class="opcion"><input type="radio" name="lm"> Accidente</label><label class="opcion"><input type="radio" name="lm"> Convivencia</label><label class="opcion"><input type="radio" name="lm"> Académico</label><label class="opcion"><input type="radio" name="lm"> Inasistencia sin excusa</label><label class="opcion"><input type="radio" name="lm"> Otro</label></div></div>
 <div class="campo"><label for="ld">Descripción</label><input class="input" id="ld" placeholder="Ej.: presenta fiebre desde la segunda hora"></div>
-<div class="campo"><label>Resultado</label><div class="opciones"><label class="opcion"><input type="radio" name="lr" value="contesto" checked> Contestó</label><label class="opcion"><input type="radio" name="lr" value="no"> No contestó</label><label class="opcion"><input type="radio" name="lr" value="equivocado"> Número equivocado</label></div><p class="ayuda">Si no contesta o el número está equivocado, secretaría recibe un aviso para actualizarlo.</p></div>
+<div class="campo"><label>Resultado</label><div class="opciones"><label class="opcion"><input type="radio" name="lr" value="contesto" checked> Contestó</label><label class="opcion"><input type="radio" name="lr" value="no"> No contestó</label><label class="opcion"><input type="radio" name="lr" value="equivocado"> Número equivocado</label><label class="opcion"><input type="radio" name="lr" value="devolvio"> El acudiente devolvió la llamada</label></div><p class="ayuda">Si no contestó, la llamada queda pendiente. Cuando el acudiente devuelva la llamada, se registra con <strong>Devolvió la llamada</strong> y queda unida a la primera. Si el número está equivocado, secretaría académica recibe el aviso para actualizarlo.</p></div>
 <div class="campo"><label>¿Qué dijo el acudiente?</label><div class="opciones">
 <label class="opcion"><input type="radio" name="lc" value="recoge" checked> Viene a recogerlo</label>
 <label class="opcion"><input type="radio" name="lc" value="envia"> Envía a alguien a recogerlo</label>
@@ -35,14 +35,14 @@
 <div style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn" type="submit">Guardar llamada</button><a class="btn btn-sec" href="v-salida.html">Guardar y preparar salida anticipada</a></div>
 </form>
 <aside style="display:flex;flex-direction:column;gap:14px">
-<div class="tarjeta"><h3>Llamadas de hoy</h3>
+<div class="tarjeta"><h3>Llamadas de hoy</h3><p class="subtitulo" style="font-size:13px;margin:-4px 0 6px">Las que no contestaron quedan pendientes hasta que el acudiente se comunique.</p>
 <div class="fila-est"><span class="avatar">JP</span><div><div class="nombre">Juan Pablo Herrera Tovar · 8°2</div><div class="det">9:15 a. m. · Fiebre · Contestó · Viene a recogerlo</div><div class="det">Atendió: Secretaría pagaduría</div></div><span></span></div>
-<div class="fila-est"><span class="avatar">LM</span><div><div class="nombre">Laura Sofía Méndez Rueda · 8°2</div><div class="det">8:40 a. m. · Dolor de cabeza · No contestó</div><div class="det">Atendió: Docente de Matemáticas</div></div><span class="etiqueta aviso">Verificar</span></div>
+<div class="fila-est"><span class="avatar">LM</span><div><div class="nombre">Laura Sofía Méndez Rueda · 8°2</div><div class="det">8:40 a. m. · Dolor de cabeza · No contestó</div><div class="det">Atendió: Docente de Matemáticas</div></div><a class="btn btn-peq btn-sec" href="s-llamada.html?dev=1" title="Registrar que el acudiente devolvió la llamada">Devolvió</a></div>
 <div class="fila-est"><span class="avatar">IG</span><div><div class="nombre">Isabella Gómez Serrano · 8°2</div><div class="det">10:05 a. m. · Dolor de estómago · Contestó · Le traen un medicamento (tía)</div><div class="det">Atendió: Coordinación</div></div><span></span></div>
 </div>
 <div class="tarjeta" style="background:var(--relleno-2)"><p style="font-size:14px">Cada llamada queda en la ficha del estudiante y en el historial del acudiente, con fecha, hora, número marcado y respuesta. Si el número no contesta o está equivocado, le llega el aviso a secretaría académica para actualizarlo.</p></div>
 </aside>
 </div></section>
 </main>
-
+<script>try{if(new URLSearchParams(location.search).get("dev")){document.querySelector('input[name=lr][value=devolvio]').checked=true;document.getElementById("lb").value="Laura Sofía Méndez Rueda · 8°2";document.getElementById("lh").value="09:05";}}catch(e){}</script>
 </body></html>
