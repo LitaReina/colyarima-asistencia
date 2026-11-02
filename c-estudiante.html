@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ficha del estudiante · Asistencia Colyarima (wireframe)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/wireframe.css">
+</head>
+<body>
+<div class="wf-franja"><div class="contenedor"><span>Wireframe v1.0 · Pantalla 12: Ficha del estudiante</span><span><a href="mapa.html">Mapa del prototipo</a> · <a href="index.html">Cambiar de rol</a></span></div></div>
+<header class="appbar"><div class="contenedor"><a class="marca" href="index.html"><span class="logo-ph">LOGO</span><span>Asistencia Colyarima<small>Colegio Integrado Yarima</small></span></a>
+<div class="usuario"><span class="rol">Coordinación</span><span>Coordinador de convivencia</span><span class="avatar">CO</span><a href="index.html">Salir</a></div></div></header>
+<nav class="submenu"><div class="contenedor"><ul><li><a href="c-panel.html">Panel del día</a></li><li><a href="c-amonestaciones.html">Amonestaciones por grupo</a></li><li><a href="c-estudiante.html" class="activo">Ficha del estudiante</a></li><li><a href="c-excusas.html">Excusas</a></li></ul></div></nav>
+<main>
+<div class="cabecera-pagina" style="padding:18px 0 22px"><div class="contenedor"><h1 style="margin-top:0">Juan Pablo Herrera Tovar</h1><p class="subtitulo">Grado 8°2 · Usuario 1098700001T · Acudiente: [nombre] · Celular [000 000 0000]</p></div></div>
+<section><div class="contenedor rejilla r-2-1">
+<div>
+<div class="rejilla r3">
+<div class="kpi verde"><div class="n">93 %</div><div class="t">Asistencia del periodo</div></div>
+<div class="kpi rojo"><div class="n">2</div><div class="t">Fallas (1 justificada)</div></div>
+<div class="kpi ambar"><div class="n">4</div><div class="t">Anotaciones</div></div>
+</div>
+<div class="tarjeta" style="margin-top:18px"><h3>Registro de anotaciones</h3>
+<table class="tabla"><tr><th>Fecha</th><th>Tipo</th><th>Registró</th><th>Notificado</th><th>Enterado</th></tr>
+<tr><td>10/11 6:55 a. m.</td><td>Llegada tarde</td><td>Vigilancia</td><td>✓</td><td>✓ 10/11</td></tr>
+<tr><td>03/11 6:49 a. m.</td><td>Llegada tarde</td><td>Vigilancia</td><td>✓</td><td>✓ 03/11</td></tr>
+<tr><td>28/10</td><td>Uniforme incorrecto</td><td>Vigilancia</td><td>✓</td><td>✓ 29/10</td></tr>
+<tr><td>20/10</td><td>Sin carné</td><td>Vigilancia</td><td>✓</td><td>Pendiente</td></tr></table></div>
+</div>
+<aside style="display:flex;flex-direction:column;gap:14px">
+<div class="tarjeta"><h3>Registrar seguimiento</h3><textarea class="textarea input" style="min-height:90px" placeholder="Acuerdo con el estudiante o citación al acudiente"></textarea><a class="btn btn-peq" style="margin-top:10px" href="c-estudiante.html">Guardar</a></div>
+<a class="btn btn-sec btn-bloque" href="c-estudiante.html">Descargar reporte del periodo (PDF)</a>
+<a href="c-amonestaciones.html">← Volver al grupo</a>
+</aside>
+</div></section>
+</main>
+
+</body></html>

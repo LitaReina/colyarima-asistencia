@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tramitar excusa · Asistencia Colyarima (wireframe)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/wireframe.css">
+</head>
+<body class="vista-movil"><div class="marco">
+<div class="wf-franja"><div class="contenedor"><span>Wireframe v1.0 · Pantalla 07: Tramitar excusa</span><span><a href="mapa.html">Mapa del prototipo</a> · <a href="index.html">Cambiar de rol</a></span></div></div>
+<header class="appbar"><div class="contenedor"><a class="marca" href="a-inicio.html"><span class="logo-ph" style="width:36px;height:36px">LOGO</span><span style="font-size:15px">Asistencia Colyarima<small>Acudiente</small></span></a><span class="avatar">AC</span></div></header>
+<main>
+<section><div class="contenedor">
+<a href="a-inicio.html">← Volver</a>
+<h1 style="margin-top:12px">Tramitar excusa</h1>
+<p class="subtitulo" style="font-size:14px">Valentina Rojas Pinto · 8°2 · Inasistencia del 12 de noviembre</p>
+<form action="a-excusa-enviada.html" style="margin-top:14px">
+<div class="campo"><label>Motivo</label><div class="opciones"><label class="opcion" style="width:100%"><input type="radio" name="motivo" checked> Enfermedad o cita médica</label><label class="opcion" style="width:100%"><input type="radio" name="motivo"> Calamidad doméstica</label><label class="opcion" style="width:100%"><input type="radio" name="motivo"> Diligencia personal o familiar</label><label class="opcion" style="width:100%"><input type="radio" name="motivo"> Otro</label></div></div>
+<div class="rejilla r2" style="gap:10px"><div class="campo"><label for="f1">Desde</label><input class="input" id="f1" type="date" value="2026-11-12"></div><div class="campo"><label for="f2">Hasta</label><input class="input" id="f2" type="date" value="2026-11-12"></div></div>
+<div class="campo"><label for="ex">Explicación</label><textarea class="textarea input" id="ex" style="min-height:90px" placeholder="Describe brevemente el motivo"></textarea></div>
+<div class="campo"><label>Soporte</label><div class="adjunto">Toma una foto o adjunta un PDF (incapacidad, constancia de cita, etc.)<input type="file" accept="image/*,.pdf" capture="environment"></div></div>
+<button class="btn btn-bloque" type="submit">Enviar excusa</button>
+</form>
+</div></section>
+</main>
+<nav class="tabbar"><a href="a-inicio.html"><b>⌂</b>Inicio</a><a href="a-historial.html"><b>☰</b>Historial</a><a href="a-excusa.html" class="activo"><b>✎</b>Excusas</a><a href="a-notificacion.html"><b>!</b>Alertas</a></nav>
+</div></body></html>

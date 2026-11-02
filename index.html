@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inicio de sesión · Asistencia Colyarima (wireframe)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/wireframe.css">
+</head>
+<body>
+<div class="wf-franja"><div class="contenedor"><span>Wireframe v1.0 · Pantalla 01: Inicio de sesión</span><span><a href="mapa.html">Mapa del prototipo</a> · <a href="index.html">Cambiar de rol</a></span></div></div>
+<header class="appbar"><div class="contenedor"><a class="marca" href="index.html"><span class="logo-ph">LOGO</span><span>Asistencia Colyarima<small>Colegio Integrado Yarima</small></span></a><span class="subtitulo" style="margin:0;font-size:14px">Control de ingreso, asistencia y novedades</span></div></header>
+<main><section><div class="contenedor login">
+<div class="rejilla r-2-1" style="align-items:start">
+<div><h1>Ingresa a la plataforma</h1><p class="subtitulo">Usa el mismo usuario de la matrícula virtual. El sistema te muestra las opciones según tu rol.</p>
+<form class="tarjeta" style="margin-top:20px" action="a-inicio.html">
+<div class="campo"><label for="u">Usuario</label><input class="input" id="u" placeholder="Número de documento"></div>
+<div class="campo"><label for="p">Contraseña</label><input class="input" id="p" type="password" placeholder="••••••••"></div>
+<button class="btn btn-bloque" type="submit">Ingresar</button>
+<p class="ayuda" style="margin-top:12px;font-size:13px;color:var(--tinta-2)"><a href="index.html">¿Olvidaste tu contraseña?</a> Se envía un código al celular o correo registrado.</p>
+</form></div>
+<div class="tarjeta" style="background:var(--relleno-2)"><h3>Cómo funciona</h3><ol style="padding-left:18px;font-size:14px;color:var(--tinta-2)"><li style="margin-bottom:8px">Vigilancia registra el ingreso con el carné.</li><li style="margin-bottom:8px">Las novedades llegan al acudiente al instante.</li><li style="margin-bottom:8px">Si el estudiante no ingresa, el acudiente recibe la alerta y tramita la excusa.</li><li>Coordinación y docentes consultan todo por grupo.</li></ol></div>
+</div>
+<h2 style="margin-top:36px">Recorrer el prototipo por rol</h2>
+<p class="subtitulo" style="margin:-8px 0 16px;font-size:14px">Atajo del wireframe para revisar cada perfil sin iniciar sesión.</p>
+<div class="roles">
+<a class="rol-card" href="v-ingreso.html"><div class="icono-ph">▮▯</div><strong>Vigilancia</strong><small>Ingreso con carné y novedades</small></a>
+<a class="rol-card" href="a-inicio.html"><div class="icono-ph">♥</div><strong>Acudiente</strong><small>Alertas y excusas</small></a>
+<a class="rol-card" href="c-panel.html"><div class="icono-ph">▤</div><strong>Coordinación</strong><small>Amonestaciones y excusas</small></a>
+<a class="rol-card" href="d-grupos.html"><div class="icono-ph">✎</div><strong>Docente</strong><small>Asistencia de sus grupos</small></a>
+</div>
+</div></section></main></body></html>

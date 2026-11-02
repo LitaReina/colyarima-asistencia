@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Revisión de excusas · Asistencia Colyarima (wireframe)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/wireframe.css">
+</head>
+<body>
+<div class="wf-franja"><div class="contenedor"><span>Wireframe v1.0 · Pantalla 13: Revisión de excusas</span><span><a href="mapa.html">Mapa del prototipo</a> · <a href="index.html">Cambiar de rol</a></span></div></div>
+<header class="appbar"><div class="contenedor"><a class="marca" href="index.html"><span class="logo-ph">LOGO</span><span>Asistencia Colyarima<small>Colegio Integrado Yarima</small></span></a>
+<div class="usuario"><span class="rol">Coordinación</span><span>Coordinador de convivencia</span><span class="avatar">CO</span><a href="index.html">Salir</a></div></div></header>
+<nav class="submenu"><div class="contenedor"><ul><li><a href="c-panel.html">Panel del día</a></li><li><a href="c-amonestaciones.html">Amonestaciones por grupo</a></li><li><a href="c-estudiante.html">Ficha del estudiante</a></li><li><a href="c-excusas.html" class="activo">Excusas</a></li></ul></div></nav>
+<main>
+<div class="cabecera-pagina" style="padding:18px 0 22px"><div class="contenedor"><h1 style="margin-top:0">Revisión de excusas</h1><p class="subtitulo">7 excusas pendientes. Al aprobar, la falta queda justificada para todos los docentes del estudiante.</p></div></div>
+<section><div class="contenedor rejilla r-1-2">
+<div class="tarjeta" style="align-self:start"><h3>Pendientes</h3>
+<div class="fila-est" style="background:var(--acento-claro);border-radius:6px;padding:10px"><span class="avatar">VR</span><div><div class="nombre">Valentina Rojas Pinto</div><div class="det">8°2 · 12 nov</div></div><span class="etiqueta azul">Nueva</span></div>
+<div class="fila-est"><span class="avatar">JP</span><div><div class="nombre">Juan José Prada Gómez</div><div class="det">6°2 · 11 y 12 nov</div></div><span></span></div>
+<div class="fila-est"><span class="avatar">MA</span><div><div class="nombre">María Fernanda Ardila Ruiz</div><div class="det">11°1 · 12 nov</div></div><span class="etiqueta rojo">Sin soporte</span></div>
+</div>
+<form class="tarjeta" action="c-excusas.html">
+<div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><h3>EXC-2026-0412 · Valentina Rojas Pinto</h3><span class="etiqueta azul">En revisión</span></div>
+<div class="dato"><span>Fechas</span><span>12 de noviembre (1 día)</span></div>
+<div class="dato"><span>Motivo</span><span>Enfermedad o cita médica</span></div>
+<div class="dato"><span>Explicación</span><span>Cita de control en el centro de salud de San Vicente.</span></div>
+<div class="dato"><span>Enviada</span><span>12 nov, 9:14 a. m., por el acudiente</span></div>
+<h3 style="margin-top:16px">Soporte</h3>
+<div class="soporte"><div class="img-ph" style="min-height:70px"><span>JPG</span></div><div><strong>constancia-cita.jpg</strong><div class="det" style="font-size:13px;color:var(--tinta-2)">Foto tomada con el celular · 1,2 MB</div></div><a class="btn btn-peq btn-sec" href="c-excusas.html">Ver</a></div>
+<div class="campo" style="margin-top:16px"><label for="com">Comentario para el acudiente (opcional)</label><input class="input" id="com" placeholder="Ej.: recuerde presentar el original en coordinación"></div>
+<div style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn" type="submit">Aprobar excusa</button><a class="btn btn-sec" href="c-excusas.html">Rechazar</a></div>
+</form>
+</div></section>
+</main>
+
+</body></html>

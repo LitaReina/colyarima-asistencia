@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lista de clase · Asistencia Colyarima (wireframe)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/wireframe.css">
+</head>
+<body>
+<div class="wf-franja"><div class="contenedor"><span>Wireframe v1.0 · Pantalla 15: Lista de clase</span><span><a href="mapa.html">Mapa del prototipo</a> · <a href="index.html">Cambiar de rol</a></span></div></div>
+<header class="appbar"><div class="contenedor"><a class="marca" href="index.html"><span class="logo-ph">LOGO</span><span>Asistencia Colyarima<small>Colegio Integrado Yarima</small></span></a>
+<div class="usuario"><span class="rol">Docente</span><span>Docente de Matemáticas</span><span class="avatar">DM</span><a href="index.html">Salir</a></div></div></header>
+<nav class="submenu"><div class="contenedor"><ul><li><a href="d-grupos.html">Mis grupos</a></li><li><a href="d-lista.html" class="activo">Lista de clase</a></li></ul></div></nav>
+<main>
+<div class="cabecera-pagina" style="padding:18px 0 22px"><div class="contenedor"><h1 style="margin-top:0">Lista de clase · 8°2 · Matemáticas</h1><p class="subtitulo">1.ª hora · La lista viene precargada con el registro de portería; el docente confirma o corrige.</p></div></div>
+<section><div class="contenedor rejilla r-2-1">
+<form class="tarjeta" action="d-grupos.html">
+<div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:6px"><h3>35 estudiantes</h3><span class="subtitulo" style="margin:0;font-size:14px">Vista parcial</span></div>
+<div class="fila-est"><span class="avatar">AL</span><div><div class="nombre">Ana Lucía Barrera Mora</div><div class="det">Ingresó 6:31 a. m.</div></div><div class="marcas"><label class="marca-op p"><input type="radio" name="e0" checked> Presente</label><label class="marca-op a"><input type="radio" name="e0"> Ausente</label><label class="marca-op t"><input type="radio" name="e0"> Tarde</label></div></div><div class="fila-est"><span class="avatar">CA</span><div><div class="nombre">Camilo Andrés Duarte Rey</div><div class="det">Ingresó 6:40 a. m.</div></div><div class="marcas"><label class="marca-op p"><input type="radio" name="e1" checked> Presente</label><label class="marca-op a"><input type="radio" name="e1"> Ausente</label><label class="marca-op t"><input type="radio" name="e1"> Tarde</label></div></div><div class="fila-est"><span class="avatar">IG</span><div><div class="nombre">Isabella Gómez Serrano</div><div class="det">Ingresó 6:28 a. m.</div></div><div class="marcas"><label class="marca-op p"><input type="radio" name="e2" checked> Presente</label><label class="marca-op a"><input type="radio" name="e2"> Ausente</label><label class="marca-op t"><input type="radio" name="e2"> Tarde</label></div></div><div class="fila-est"><span class="avatar">JP</span><div><div class="nombre">Juan Pablo Herrera Tovar</div><div class="det">Llegada tarde 6:55 a. m.</div></div><div class="marcas"><label class="marca-op p"><input type="radio" name="e3"> Presente</label><label class="marca-op a"><input type="radio" name="e3"> Ausente</label><label class="marca-op t"><input type="radio" name="e3" checked> Tarde</label></div></div><div class="fila-est"><span class="avatar">LS</span><div><div class="nombre">Laura Sofía Méndez Rueda</div><div class="det">Ingresó 6:35 a. m.</div></div><div class="marcas"><label class="marca-op p"><input type="radio" name="e4" checked> Presente</label><label class="marca-op a"><input type="radio" name="e4"> Ausente</label><label class="marca-op t"><input type="radio" name="e4"> Tarde</label></div></div><div class="fila-est"><span class="avatar">MS</span><div><div class="nombre">Mateo Sebastián Niño Vera</div><div class="det">Sin ingreso en portería</div></div><div class="marcas"><label class="marca-op p"><input type="radio" name="e5"> Presente</label><label class="marca-op a"><input type="radio" name="e5" checked> Ausente</label><label class="marca-op t"><input type="radio" name="e5"> Tarde</label></div></div><div class="fila-est"><span class="avatar">PA</span><div><div class="nombre">Paula Andrea Quiroga Silva</div><div class="det">Ingresó 6:22 a. m.</div></div><div class="marcas"><label class="marca-op p"><input type="radio" name="e6" checked> Presente</label><label class="marca-op a"><input type="radio" name="e6"> Ausente</label><label class="marca-op t"><input type="radio" name="e6"> Tarde</label></div></div><div class="fila-est"><span class="avatar">VR</span><div><div class="nombre">Valentina Rojas Pinto</div><div class="det">Sin ingreso · Excusa en revisión</div></div><div class="marcas"><label class="marca-op p"><input type="radio" name="e7"> Presente</label><label class="marca-op a"><input type="radio" name="e7" checked> Ausente</label><label class="marca-op t"><input type="radio" name="e7"> Tarde</label></div></div>
+<button class="btn" style="margin-top:16px" type="submit">Guardar asistencia</button>
+</form>
+<aside style="display:flex;flex-direction:column;gap:14px">
+<div class="kpi verde"><div class="n">32</div><div class="t">Presentes</div></div>
+<div class="kpi rojo"><div class="n">2</div><div class="t">Ausentes (1 con excusa en revisión)</div></div>
+<div class="kpi ambar"><div class="n">1</div><div class="t">Llegada tarde</div></div>
+<p class="subtitulo" style="font-size:13px;margin:0">Si el docente marca ausente a un estudiante que sí ingresó al colegio, coordinación recibe una alerta de posible evasión de clase.</p>
+</aside>
+</div></section>
+</main>
+
+</body></html>

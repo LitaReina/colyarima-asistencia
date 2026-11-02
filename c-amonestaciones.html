@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amonestaciones por grupo · Asistencia Colyarima (wireframe)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/wireframe.css">
+</head>
+<body>
+<div class="wf-franja"><div class="contenedor"><span>Wireframe v1.0 · Pantalla 11: Amonestaciones por grupo</span><span><a href="mapa.html">Mapa del prototipo</a> · <a href="index.html">Cambiar de rol</a></span></div></div>
+<header class="appbar"><div class="contenedor"><a class="marca" href="index.html"><span class="logo-ph">LOGO</span><span>Asistencia Colyarima<small>Colegio Integrado Yarima</small></span></a>
+<div class="usuario"><span class="rol">Coordinación</span><span>Coordinador de convivencia</span><span class="avatar">CO</span><a href="index.html">Salir</a></div></div></header>
+<nav class="submenu"><div class="contenedor"><ul><li><a href="c-panel.html">Panel del día</a></li><li><a href="c-amonestaciones.html" class="activo">Amonestaciones por grupo</a></li><li><a href="c-estudiante.html">Ficha del estudiante</a></li><li><a href="c-excusas.html">Excusas</a></li></ul></div></nav>
+<main>
+<div class="cabecera-pagina" style="padding:18px 0 22px"><div class="contenedor"><h1 style="margin-top:0">Amonestaciones por grupo</h1><p class="subtitulo">Consolidado del periodo para la valoración de comportamiento. Reemplaza la revisión nombre por nombre del libro.</p></div></div>
+<section><div class="contenedor">
+<form class="rejilla r4" style="align-items:end;margin-bottom:20px" action="c-amonestaciones.html">
+<div class="campo" style="margin:0"><label for="g">Grupo</label><select class="input" id="g"><option>8°2</option><option>Todos los grupos</option><option>6°1</option><option>10°1</option></select></div>
+<div class="campo" style="margin:0"><label for="pe">Periodo</label><select class="input" id="pe"><option>Cuarto periodo</option><option>Tercer periodo</option></select></div>
+<div class="campo" style="margin:0"><label for="b">Buscar estudiante</label><input class="input" id="b" placeholder="Nombre o documento"></div>
+<div style="display:flex;gap:8px"><button class="btn" type="submit">Filtrar</button><a class="btn btn-sec" href="c-amonestaciones.html">Exportar</a></div>
+</form>
+<div class="tarjeta">
+<div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:8px"><h3>Grupo 8°2 · 35 estudiantes</h3><span class="subtitulo" style="margin:0;font-size:14px">Resaltados: 3 o más anotaciones</span></div>
+<table class="tabla"><tr><th>Estudiante</th><th class="num">Tarde</th><th class="num">Uniforme</th><th class="num">Sin carné</th><th class="num">Otra</th><th class="num">Total</th><th class="num">Acudiente enterado</th></tr><tr><td><a href="c-estudiante.html">Ana Lucía Barrera Mora</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num"><strong>0</strong></td><td class="num">–</td></tr><tr><td><a href="c-estudiante.html">Camilo Andrés Duarte Rey</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num"><strong>1</strong></td><td class="num">✓</td></tr><tr><td><a href="c-estudiante.html">Isabella Gómez Serrano</a></td><td class="num">0</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num"><strong>1</strong></td><td class="num">✓</td></tr><tr class="fila-alerta"><td><a href="c-estudiante.html">Juan Pablo Herrera Tovar</a></td><td class="num">2</td><td class="num">1</td><td class="num">1</td><td class="num">0</td><td class="num"><strong>4</strong></td><td class="num">✓</td></tr><tr><td><a href="c-estudiante.html">Laura Sofía Méndez Rueda</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num"><strong>0</strong></td><td class="num">–</td></tr><tr class="fila-alerta"><td><a href="c-estudiante.html">Mateo Sebastián Niño Vera</a></td><td class="num">1</td><td class="num">2</td><td class="num">0</td><td class="num">1</td><td class="num"><strong>4</strong></td><td class="num">✓</td></tr><tr><td><a href="c-estudiante.html">Paula Andrea Quiroga Silva</a></td><td class="num">0</td><td class="num">0</td><td class="num">1</td><td class="num">0</td><td class="num"><strong>1</strong></td><td class="num">✓</td></tr><tr><td><a href="c-estudiante.html">Valentina Rojas Pinto</a></td><td class="num">1</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num"><strong>2</strong></td><td class="num">✓</td></tr></table>
+<p class="subtitulo" style="font-size:13px">Vista parcial del grupo. Cada nombre abre la ficha del estudiante.</p>
+</div>
+</div></section>
+</main>
+
+</body></html>

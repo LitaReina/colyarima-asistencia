@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Registro de ingreso · Asistencia Colyarima (wireframe)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/wireframe.css">
+</head>
+<body>
+<div class="wf-franja"><div class="contenedor"><span>Wireframe v1.0 · Pantalla 02: Registro de ingreso</span><span><a href="mapa.html">Mapa del prototipo</a> · <a href="index.html">Cambiar de rol</a></span></div></div>
+<header class="appbar"><div class="contenedor"><a class="marca" href="index.html"><span class="logo-ph">LOGO</span><span>Asistencia Colyarima<small>Colegio Integrado Yarima</small></span></a>
+<div class="usuario"><span class="rol">Vigilancia</span><span>Portería</span><span class="avatar">VP</span><a href="index.html">Salir</a></div></div></header>
+<nav class="submenu"><div class="contenedor"><ul><li><a href="v-ingreso.html" class="activo">Registro de ingreso</a></li><li><a href="v-novedad.html">Registrar novedad</a></li><li><a href="v-cierre.html">Cierre de ingreso</a></li></ul></div></nav>
+<main>
+<div class="cabecera-pagina" style="padding:18px 0 22px"><div class="contenedor"><h1 style="margin-top:0">Registro de ingreso</h1><p class="subtitulo">Jornada de la mañana · Jueves 12 de noviembre · El ingreso se cierra a las 6:45 a. m.</p></div></div>
+<section><div class="contenedor rejilla r2">
+<div>
+<form class="escaner" action="v-ingreso.html" method="get">
+<div class="icono-barra">▮▯▮▮▯▮▯▮▮</div>
+<p style="margin-top:8px;font-weight:600">Escanee el código de barras del carné</p>
+<input class="input" id="cod" name="cod" autofocus placeholder="o digite el número de usuario (termina en T)" autocomplete="off">
+<button class="btn btn-bloque" style="margin-top:10px" type="submit">Registrar ingreso</button>
+</form>
+<div class="tarjeta" style="margin-top:18px">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px"><h3 style="margin:0">Último registro</h3><span class="etiqueta ok" id="est">A tiempo · 6:38 a. m.</span></div>
+<div class="registro"><div class="img-ph"><span>Foto</span></div><div><p style="font-size:20px;font-weight:700">Valentina Rojas Pinto</p><p class="subtitulo" style="margin:2px 0 0;font-size:15px">Grado 8°2 · Usuario <span id="usr">1098765432T</span></p><p class="subtitulo" style="margin:6px 0 0;font-size:14px">Acudiente notificado del ingreso ✓</p></div></div>
+</div>
+</div>
+<div>
+<h3>¿El estudiante tiene una novedad?</h3>
+<p class="subtitulo" style="margin:0 0 12px;font-size:14px">Se registra sobre el último estudiante escaneado y se notifica al acudiente.</p>
+<div class="botones-novedad">
+<a class="btn-novedad" href="v-novedad.html?tipo=sin-carne">Sin carné</a>
+<a class="btn-novedad" href="v-novedad.html?tipo=tarde">Llegada tarde</a>
+<a class="btn-novedad" href="v-novedad.html?tipo=uniforme">Uniforme incorrecto</a>
+<a class="btn-novedad" href="v-novedad.html?tipo=otra">Otra novedad</a>
+</div>
+<div class="rejilla r3" style="margin-top:20px;gap:10px">
+<div class="kpi verde"><div class="n">412</div><div class="t">Ingresaron</div></div>
+<div class="kpi rojo"><div class="n">36</div><div class="t">Faltan por ingresar</div></div>
+<div class="kpi ambar"><div class="n">9</div><div class="t">Novedades hoy</div></div>
+</div>
+<a class="btn btn-sec btn-bloque" style="margin-top:16px" href="v-cierre.html">Ir al cierre de ingreso</a>
+</div>
+</div></section>
+</main>
+<script>try{var c=new URLSearchParams(location.search).get("cod");if(c){document.getElementById("usr").textContent=c;}}catch(e){}</script>
+</body></html>

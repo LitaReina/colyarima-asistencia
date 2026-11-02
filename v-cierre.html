@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cierre de ingreso · Asistencia Colyarima (wireframe)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/wireframe.css">
+</head>
+<body>
+<div class="wf-franja"><div class="contenedor"><span>Wireframe v1.0 · Pantalla 04: Cierre de ingreso</span><span><a href="mapa.html">Mapa del prototipo</a> · <a href="index.html">Cambiar de rol</a></span></div></div>
+<header class="appbar"><div class="contenedor"><a class="marca" href="index.html"><span class="logo-ph">LOGO</span><span>Asistencia Colyarima<small>Colegio Integrado Yarima</small></span></a>
+<div class="usuario"><span class="rol">Vigilancia</span><span>Portería</span><span class="avatar">VP</span><a href="index.html">Salir</a></div></div></header>
+<nav class="submenu"><div class="contenedor"><ul><li><a href="v-ingreso.html">Registro de ingreso</a></li><li><a href="v-novedad.html">Registrar novedad</a></li><li><a href="v-cierre.html" class="activo">Cierre de ingreso</a></li></ul></div></nav>
+<main>
+<div class="cabecera-pagina" style="padding:18px 0 22px"><div class="contenedor"><h1 style="margin-top:0">Cierre de ingreso</h1><p class="subtitulo">Al cerrar, los estudiantes sin registro quedan como inasistentes y sus acudientes reciben la alerta.</p></div></div>
+<section><div class="contenedor rejilla r-2-1">
+<div class="tarjeta"><h3>Resumen por grupo</h3>
+<table class="tabla"><tr><th>Grupo</th><th class="num">Matriculados</th><th class="num">Ingresaron</th><th class="num">Sin ingreso</th></tr><tr><td>6°1</td><td class="num">34</td><td class="num">33</td><td class="num" style="color:var(--rojo)">1</td></tr><tr><td>6°2</td><td class="num">33</td><td class="num">31</td><td class="num" style="color:var(--rojo)">2</td></tr><tr><td>7°1</td><td class="num">35</td><td class="num">35</td><td class="num" style="color:var(--rojo)">0</td></tr><tr><td>7°2</td><td class="num">34</td><td class="num">32</td><td class="num" style="color:var(--rojo)">2</td></tr><tr><td>8°1</td><td class="num">36</td><td class="num">34</td><td class="num" style="color:var(--rojo)">2</td></tr><tr><td>8°2</td><td class="num">35</td><td class="num">33</td><td class="num" style="color:var(--rojo)">2</td></tr><tr><td>9°1</td><td class="num">38</td><td class="num">36</td><td class="num" style="color:var(--rojo)">2</td></tr><tr><td>10°1</td><td class="num">37</td><td class="num">34</td><td class="num" style="color:var(--rojo)">3</td></tr><tr><td>11°1</td><td class="num">30</td><td class="num">28</td><td class="num" style="color:var(--rojo)">2</td></tr></table>
+<p class="subtitulo" style="font-size:13px">Vista parcial: la lista continúa con los demás grupos.</p></div>
+<aside style="display:flex;flex-direction:column;gap:14px">
+<div class="kpi rojo"><div class="n">36</div><div class="t">Estudiantes sin registro de ingreso</div></div>
+<div class="alerta rojo"><div><strong>Se enviarán 36 alertas de inasistencia.</strong> Cada acudiente podrá tramitar la excusa con soportes desde su celular.</div></div>
+<a class="btn btn-peligro btn-bloque" href="v-cierre.html">Cerrar ingreso y enviar alertas</a>
+<a class="btn btn-sec btn-bloque" href="v-ingreso.html">Seguir registrando</a>
+<p class="subtitulo" style="font-size:13px;margin:0">Si un estudiante llega después del cierre, se registra como llegada tarde y la alerta de inasistencia se anula.</p>
+</aside>
+</div></section>
+</main>
+
+</body></html>
