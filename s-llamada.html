@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Registrar llamada al acudiente · Asistencia Colyarima (wireframe)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/wireframe.css">
+</head>
+<body>
+<div class="wf-franja"><div class="contenedor"><span>Wireframe v1.0 · Pantalla 19: Registrar llamada al acudiente</span><span><a href="mapa.html">Mapa del prototipo</a> · <a href="index.html">Cambiar de rol</a></span></div></div>
+<header class="appbar"><div class="contenedor"><a class="marca" href="index.html"><span class="logo-ph">LOGO</span><span>Asistencia Colyarima<small>Colegio Integrado Yarima</small></span></a>
+<div class="usuario"><span class="rol">Secretaría académica</span><span>Administración del sistema</span><span class="avatar">SA</span><a href="index.html">Salir</a></div></div></header>
+<nav class="submenu"><div class="contenedor"><ul><li><a href="s-estudiantes.html">Estudiantes</a></li><li><a href="s-editar.html">Ficha y novedades de matrícula</a></li><li><a href="s-llamada.html" class="activo">Llamadas al acudiente</a></li><li><a href="c-amonestaciones.html">Reportes</a></li></ul></div></nav>
+<main>
+<div class="cabecera-pagina" style="padding:18px 0 22px"><div class="contenedor"><h1 style="margin-top:0">Registrar llamada al acudiente</h1><p class="subtitulo">Deja constancia de cada llamada: quién llamó, a qué número, por qué y qué se acordó. La usan secretaría y coordinación.</p></div></div>
+<section><div class="contenedor rejilla r-2-1">
+<form class="tarjeta" action="c-estudiante.html">
+<div class="campo"><label for="lb">Estudiante</label><input class="input" id="lb" list="estudiantes" value="Juan Pablo Herrera Tovar · 8°2"><datalist id="estudiantes"><option value="Ana Lucía Barrera Mora · 8°2"><option value="Camilo Andrés Duarte Rey · 8°2"><option value="Isabella Gómez Serrano · 8°2"><option value="Juan Pablo Herrera Tovar · 8°2"><option value="Laura Sofía Méndez Rueda · 8°2"><option value="Mateo Sebastián Niño Vera · 8°2"><option value="Paula Andrea Quiroga Silva · 8°2"><option value="Valentina Rojas Pinto · 8°2"><option value="Samuel Ortiz Díaz · 10°1"><option value="Kevin Andrés Cáceres León · 9°1"><option value="Daniel Esteban Vargas Quintero · 7°2"><option value="Juan José Prada Gómez · 6°2"><option value="María Fernanda Ardila Ruiz · 11°1"><option value="Mariana Rojas Pinto · 6°1"></datalist></div>
+<div class="campo"><label for="la">Acudiente y número</label><select class="input" id="la"><option>Madre · [000 000 0000]</option><option>Padre · [000 000 0000]</option></select><p class="ayuda">Desde el celular, el número se puede marcar con un toque.</p></div>
+<div class="campo"><label>Motivo</label><div class="opciones"><label class="opcion"><input type="radio" name="lm" checked> Enfermedad o malestar</label><label class="opcion"><input type="radio" name="lm"> Accidente</label><label class="opcion"><input type="radio" name="lm"> Convivencia</label><label class="opcion"><input type="radio" name="lm"> Académico</label><label class="opcion"><input type="radio" name="lm"> Inasistencia sin excusa</label><label class="opcion"><input type="radio" name="lm"> Otro</label></div></div>
+<div class="campo"><label for="ld">Descripción</label><input class="input" id="ld" placeholder="Ej.: presenta fiebre desde la segunda hora"></div>
+<div class="campo"><label>Resultado</label><div class="opciones"><label class="opcion"><input type="radio" name="lr" value="contesto" checked> Contestó</label><label class="opcion"><input type="radio" name="lr" value="no"> No contestó</label><label class="opcion"><input type="radio" name="lr" value="equivocado"> Número equivocado</label></div><p class="ayuda">Si no contesta o el número está equivocado, secretaría recibe un aviso para actualizarlo.</p></div>
+<div class="campo"><label>Acuerdo</label><div class="opciones"><label class="opcion"><input type="radio" name="lc" checked> Viene a recogerlo</label><label class="opcion"><input type="radio" name="lc"> Autoriza que siga en clase</label><label class="opcion"><input type="radio" name="lc"> Se cita al acudiente</label><label class="opcion"><input type="radio" name="lc"> Otro</label></div></div>
+<div class="rejilla r2" style="gap:16px"><div class="campo"><label for="lh">Hora de la llamada</label><input class="input" id="lh" type="time" value="09:15"></div><div class="campo"><label for="lq">Llamó</label><input class="input" id="lq" value="Coordinación · Mg. Miguel Ángel Peñaloza"></div></div>
+<div style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn" type="submit">Guardar llamada</button><a class="btn btn-sec" href="v-salida.html">Guardar y preparar salida anticipada</a></div>
+</form>
+<aside style="display:flex;flex-direction:column;gap:14px">
+<div class="tarjeta"><h3>Llamadas de hoy</h3>
+<div class="fila-est"><span class="avatar">JP</span><div><div class="nombre">Juan Pablo Herrera Tovar · 8°2</div><div class="det">9:15 a. m. · Enfermedad · Contestó · Viene a recogerlo</div></div><span></span></div>
+<div class="fila-est"><span class="avatar">MN</span><div><div class="nombre">Mateo Sebastián Niño Vera · 8°2</div><div class="det">8:40 a. m. · Inasistencia · No contestó</div></div><span class="etiqueta aviso">Verificar</span></div>
+</div>
+<div class="tarjeta" style="background:var(--relleno-2)"><p style="font-size:14px">Cada llamada queda en la ficha del estudiante y en el historial del acudiente, con fecha, hora y resultado.</p></div>
+</aside>
+</div></section>
+</main>
+
+</body></html>

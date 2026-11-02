@@ -360,3 +360,8 @@ form:has(input[name=aut][value=encargado]:checked) .sub-encargado { display: blo
 .push p { font-size: 14px; color: var(--tinta); margin-top: 2px; }
 .push.r strong { color: var(--rojo); } .push.a strong { color: #7a5400; } .push.z strong { color: var(--acento); }
 .nota-bloq { background: rgba(0,0,0,.25); border-radius: 12px; padding: 12px 14px; font-size: 13px; margin-top: 18px; line-height: 1.5; }
+/* Cinco roles en el inicio de sesión */
+.roles { grid-template-columns: repeat(5, 1fr); }
+@media (max-width: 980px) { .roles { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 640px) { .roles { grid-template-columns: repeat(2, 1fr); } }
+.tabla td .input { padding: 6px 8px; font-size: 13px; }

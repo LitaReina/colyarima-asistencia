@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ficha y novedades de matrícula · Asistencia Colyarima (wireframe)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/wireframe.css">
+</head>
+<body>
+<div class="wf-franja"><div class="contenedor"><span>Wireframe v1.0 · Pantalla 18: Ficha y novedades de matrícula</span><span><a href="mapa.html">Mapa del prototipo</a> · <a href="index.html">Cambiar de rol</a></span></div></div>
+<header class="appbar"><div class="contenedor"><a class="marca" href="index.html"><span class="logo-ph">LOGO</span><span>Asistencia Colyarima<small>Colegio Integrado Yarima</small></span></a>
+<div class="usuario"><span class="rol">Secretaría académica</span><span>Administración del sistema</span><span class="avatar">SA</span><a href="index.html">Salir</a></div></div></header>
+<nav class="submenu"><div class="contenedor"><ul><li><a href="s-estudiantes.html">Estudiantes</a></li><li><a href="s-editar.html" class="activo">Ficha y novedades de matrícula</a></li><li><a href="s-llamada.html">Llamadas al acudiente</a></li><li><a href="c-amonestaciones.html">Reportes</a></li></ul></div></nav>
+<main>
+<div class="cabecera-pagina" style="padding:18px 0 22px"><div class="contenedor"><h1 style="margin-top:0">Mateo Sebastián Niño Vera</h1><p class="subtitulo">Documento 1098700014 · Grado 8°2 · Estado: Activo</p></div></div>
+<section><div class="contenedor rejilla r-2-1">
+<form class="tarjeta" action="s-estudiantes.html">
+<h3>Datos del estudiante</h3>
+<div class="rejilla r2" style="gap:16px">
+<div class="campo"><label for="e1">Nombres y apellidos</label><input class="input" id="e1" value="Mateo Sebastián Niño Vera"></div>
+<div class="campo"><label for="e2">Documento (código del carnet)</label><input class="input" id="e2" value="1098700014"></div>
+<div class="campo"><label for="e3">Grado y grupo</label><select class="input" id="e3"><option>8°2</option><option>8°1</option></select></div>
+<div class="campo"><label for="e4">Foto para portería</label><input class="input" id="e4" type="file" accept="image/*"></div>
+</div>
+<h3 style="margin-top:8px">Acudientes</h3>
+<table class="tabla" style="margin-bottom:10px"><tr><th>Nombre</th><th>Parentesco</th><th>Celular</th><th>Puede retirar</th><th>Recibe avisos</th></tr>
+<tr><td><input class="input" value="[Nombre de la abuela]"></td><td>Abuela · acudiente designada</td><td><input class="input" value="[000 000 0000]" style="border-color:var(--aviso)"><div style="font-size:12px;color:#7a5400">No contesta (2 llamadas)</div></td><td>✓ Documento notariado</td><td>✓</td></tr>
+<tr><td><input class="input" value="[Nombre de la madre]"></td><td>Madre</td><td><input class="input" value="[000 000 0000]"></td><td>✓</td><td>✓</td></tr></table>
+<a href="s-editar.html">+ Agregar acudiente</a>
+<h3 style="margin-top:22px">Novedad de matrícula</h3>
+<div class="campo"><label>Tipo</label><div class="opciones">
+<label class="opcion"><input type="radio" name="nm" value="ninguna" checked> Sin novedad</label>
+<label class="opcion"><input type="radio" name="nm" value="retiro"> Retiro</label>
+<label class="opcion"><input type="radio" name="nm" value="desercion"> Deserción</label>
+<label class="opcion"><input type="radio" name="nm" value="traslado"> Traslado</label>
+<label class="opcion"><input type="radio" name="nm" value="cambio"> Cambio de grupo</label></div></div>
+<div class="rejilla r2" style="gap:16px"><div class="campo"><label for="fn">Fecha</label><input class="input" id="fn" type="date"></div><div class="campo"><label for="mn">Motivo u observación</label><input class="input" id="mn" placeholder="Ej.: traslado a otra institución"></div></div>
+<div style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn" type="submit">Guardar cambios</button><a class="btn btn-sec" href="s-estudiantes.html">Cancelar</a></div>
+</form>
+<aside style="display:flex;flex-direction:column;gap:14px">
+<div class="tarjeta" style="background:var(--relleno-2)"><h3>Recuerde</h3><ul style="padding-left:18px;font-size:14px;color:var(--tinta-2)"><li style="margin-bottom:6px">Los cambios se hacen primero en Integra; aquí se reflejan para la aplicación.</li><li style="margin-bottom:6px">Una deserción también debe reportarse en SIMPADE.</li><li>Solo los acudientes con "Puede retirar" aparecen en la salida anticipada.</li></ul></div>
+<div class="tarjeta"><h3>Historial de cambios</h3><ul class="lista-simple"><li style="font-size:13px">02/11 · Secretaría · Celular de la madre actualizado</li><li style="font-size:13px">20/01 · Secretaría · Matrícula 2026</li></ul></div>
+<a class="btn btn-sec btn-bloque" href="s-llamada.html">☎ Registrar llamada</a>
+</aside>
+</div></section>
+</main>
+
+</body></html>

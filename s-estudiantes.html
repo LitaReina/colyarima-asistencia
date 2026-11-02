@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estudiantes · Asistencia Colyarima (wireframe)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/wireframe.css">
+</head>
+<body>
+<div class="wf-franja"><div class="contenedor"><span>Wireframe v1.0 · Pantalla 17: Estudiantes</span><span><a href="mapa.html">Mapa del prototipo</a> · <a href="index.html">Cambiar de rol</a></span></div></div>
+<header class="appbar"><div class="contenedor"><a class="marca" href="index.html"><span class="logo-ph">LOGO</span><span>Asistencia Colyarima<small>Colegio Integrado Yarima</small></span></a>
+<div class="usuario"><span class="rol">Secretaría académica</span><span>Administración del sistema</span><span class="avatar">SA</span><a href="index.html">Salir</a></div></div></header>
+<nav class="submenu"><div class="contenedor"><ul><li><a href="s-estudiantes.html" class="activo">Estudiantes</a></li><li><a href="s-editar.html">Ficha y novedades de matrícula</a></li><li><a href="s-llamada.html">Llamadas al acudiente</a></li><li><a href="c-amonestaciones.html">Reportes</a></li></ul></div></nav>
+<main>
+<div class="cabecera-pagina" style="padding:18px 0 22px"><div class="contenedor"><h1 style="margin-top:0">Estudiantes</h1><p class="subtitulo">Matrícula de la aplicación. Se actualiza según Integra, que es la fuente oficial.</p></div></div>
+<section><div class="contenedor">
+<div class="rejilla r4" style="margin-bottom:20px">
+<div class="kpi verde"><div class="n">448</div><div class="t">Activos</div></div>
+<div class="kpi azul"><div class="n">6</div><div class="t">Nuevos ingresos en el año</div></div>
+<div class="kpi rojo"><div class="n">9</div><div class="t">Retiros y deserciones</div></div>
+<div class="kpi ambar"><div class="n">12</div><div class="t">Teléfonos por verificar</div></div>
+</div>
+<form class="rejilla r4" style="align-items:end;margin-bottom:20px" action="s-estudiantes.html">
+<div class="campo" style="margin:0"><label for="bq">Buscar</label><input class="input" id="bq" list="estudiantes" placeholder="Nombre, apellido o documento"><datalist id="estudiantes"><option value="Ana Lucía Barrera Mora · 8°2"><option value="Camilo Andrés Duarte Rey · 8°2"><option value="Isabella Gómez Serrano · 8°2"><option value="Juan Pablo Herrera Tovar · 8°2"><option value="Laura Sofía Méndez Rueda · 8°2"><option value="Mateo Sebastián Niño Vera · 8°2"><option value="Paula Andrea Quiroga Silva · 8°2"><option value="Valentina Rojas Pinto · 8°2"><option value="Samuel Ortiz Díaz · 10°1"><option value="Kevin Andrés Cáceres León · 9°1"><option value="Daniel Esteban Vargas Quintero · 7°2"><option value="Juan José Prada Gómez · 6°2"><option value="María Fernanda Ardila Ruiz · 11°1"><option value="Mariana Rojas Pinto · 6°1"></datalist></div>
+<div class="campo" style="margin:0"><label for="gr">Grupo</label><select class="input" id="gr"><option>8°2</option><option>Todos</option><option>6°1</option></select></div>
+<div class="campo" style="margin:0"><label for="es">Estado</label><select class="input" id="es"><option>Todos</option><option>Activo</option><option>Nuevo ingreso</option><option>Retirado</option><option>Desertor</option><option>Trasladado</option></select></div>
+<div style="display:flex;gap:8px;flex-wrap:wrap"><a class="btn" href="s-editar.html">+ Nuevo estudiante</a><a class="btn btn-sec" href="s-estudiantes.html">Importar Excel</a></div>
+</form>
+<div class="tarjeta">
+<div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:8px"><h3>Grupo 8°2</h3><a href="s-estudiantes.html">Exportar listado</a></div>
+<table class="tabla"><tr><th>Documento</th><th>Estudiante</th><th>Grupo</th><th>Acudiente principal</th><th>Estado</th><th></th></tr><tr><td>1098700001</td><td><a href="s-editar.html">Juan Pablo Herrera Tovar</a></td><td>8°2</td><td>Madre</td><td><span class="etiqueta ok">Activo</span></td><td><a href="s-editar.html">Editar</a></td></tr><tr><td>1098700014</td><td><a href="s-editar.html">Mateo Sebastián Niño Vera</a><div style='font-size:12px;color:#7a5400'>⚠ Teléfono no contesta</div></td><td>8°2</td><td>Abuela (designada)</td><td><span class="etiqueta ok">Activo</span></td><td><a href="s-editar.html">Editar</a></td></tr><tr><td>1098700022</td><td><a href="s-editar.html">Valentina Rojas Pinto</a></td><td>8°2</td><td>Madre</td><td><span class="etiqueta ok">Activo</span></td><td><a href="s-editar.html">Editar</a></td></tr><tr><td>1098700035</td><td><a href="s-editar.html">Brayan Steven Ruiz Celis</a></td><td>8°2</td><td>Padre</td><td><span class="etiqueta ">Retirado</span></td><td><a href="s-editar.html">Editar</a></td></tr><tr><td>1098700041</td><td><a href="s-editar.html">Karen Dayana Pabón Gil</a></td><td>8°2</td><td>Madre</td><td><span class="etiqueta rojo">Desertor</span></td><td><a href="s-editar.html">Editar</a></td></tr><tr><td>1098700050</td><td><a href="s-editar.html">Sara Lucía Mantilla Ortiz</a></td><td>8°2</td><td>Padre</td><td><span class="etiqueta azul">Nuevo ingreso</span></td><td><a href="s-editar.html">Editar</a></td></tr></table>
+<p class="subtitulo" style="font-size:13px">Los estudiantes retirados o desertores dejan de generar alertas de inasistencia, pero su historial se conserva.</p>
+</div>
+<div class="alerta" style="margin-top:18px"><div><strong>12 teléfonos por verificar:</strong> números que no contestaron o están equivocados según las llamadas registradas.</div><a class="btn btn-peq btn-sec" href="s-editar.html">Revisar</a></div>
+</div></section>
+</main>
+
+</body></html>

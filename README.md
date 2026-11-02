@@ -28,6 +28,10 @@ Autores: Liliana Reina Garzón y Jean Carlos Sandoval Rosas
 | 14 | `c-excusas.html` | Coordinación | Revisión de excusas |
 | 15 | `d-grupos.html` | Docente | Mis grupos |
 | 16 | `d-lista.html` | Docente | Lista de clase |
+| 17 | `s-estudiantes.html` | Secretaría académica | Estudiantes |
+| 18 | `s-editar.html` | Secretaría académica | Ficha y novedades de matrícula |
+| 19 | `s-llamada.html` | Secretaría y coordinación | Registrar llamada al acudiente |
+| — | `notificaciones.html` | Acudiente | Aviso en el celular (vista complementaria) |
 | — | `mapa.html` | — | Mapa del prototipo |
 
 ## Notas
