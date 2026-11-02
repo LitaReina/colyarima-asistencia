@@ -13,7 +13,7 @@ Autores: Liliana Reina Garzón y Jean Carlos Sandoval Rosas
 | N.° | Archivo | Rol | Pantalla |
 |----|---------|-----|----------|
 | 01 | `index.html` | Todos | Inicio de sesión y selección de rol |
-| 02 | `v-ingreso.html` | Vigilancia | Registro de ingreso con carné |
+| 02 | `v-ingreso.html` | Vigilancia | Registro de ingreso con carnet |
 | 03 | `v-novedad.html` | Vigilancia | Registrar novedad |
 | 04 | `v-cierre.html` | Vigilancia | Cierre de ingreso y alertas |
 | 05 | `a-inicio.html` | Acudiente | Inicio y notificaciones |
