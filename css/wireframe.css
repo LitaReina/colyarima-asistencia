@@ -346,3 +346,17 @@ body.vista-movil h1 { font-size: 24px; }
 form:has(input[name=tipo][value=uniforme]:checked) .sub-uniforme { display: block; }
 form:has(input[name=aut][value=encargado]:checked) .sub-encargado { display: block; }
 .noti.azul .barra { background: var(--acento); }
+
+/* Vista previa: aviso en la pantalla bloqueada del celular */
+.bloqueo { background: linear-gradient(160deg,#2b3a4a,#4b6378 55%,#7d92a3); min-height: 100vh; color: #fff; padding: 28px 16px 40px; }
+.bloqueo .hora-grande { text-align: center; font-size: 64px; font-weight: 300; line-height: 1; margin-top: 18px; }
+.bloqueo .fecha-bloq { text-align: center; font-size: 16px; opacity: .9; margin: 6px 0 28px; }
+.push { background: rgba(255,255,255,.92); color: var(--tinta); border-radius: 16px; padding: 12px 14px; margin-bottom: 10px; box-shadow: 0 2px 8px rgba(0,0,0,.15); display: block; }
+.push:hover { text-decoration: none; }
+.push .cab-push { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--tinta-2); margin-bottom: 4px; }
+.push .ico { width: 20px; height: 20px; border-radius: 5px; background: var(--acento); color: #fff; font-size: 11px; font-weight: 700; display: grid; place-items: center; }
+.push .cab-push span:last-child { margin-left: auto; }
+.push strong { display: block; font-size: 15px; }
+.push p { font-size: 14px; color: var(--tinta); margin-top: 2px; }
+.push.r strong { color: var(--rojo); } .push.a strong { color: #7a5400; } .push.z strong { color: var(--acento); }
+.nota-bloq { background: rgba(0,0,0,.25); border-radius: 12px; padding: 12px 14px; font-size: 13px; margin-top: 18px; line-height: 1.5; }
