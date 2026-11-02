@@ -369,3 +369,5 @@ form:has(input[name=aut][value=encargado]:checked) .sub-encargado { display: blo
 form:has(input[name=lc][value=recoge]:checked) .sub-quien,
 form:has(input[name=lc][value=envia]:checked) .sub-quien,
 form:has(input[name=lc][value=medicamento]:checked) .sub-quien { display: block; }
+.sub-nocontesto { display: none; }
+form:has(input[name=lr][value=no]:checked) .sub-nocontesto { display: flex; }
