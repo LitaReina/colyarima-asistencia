@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ruta de deserción · Asistencia Colyarima (wireframe)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/wireframe.css">
+</head>
+<body>
+<div class="wf-franja"><div class="contenedor"><span>Wireframe v1.0 · Pantalla 23: Ruta de deserción</span><span><a href="mapa.html">Mapa del prototipo</a> · <a href="index.html">Cambiar de rol</a></span></div></div>
+<header class="appbar"><div class="contenedor"><a class="marca" href="index.html"><img class="logo-img" src="img/escudo.jpg" alt="Escudo del Colegio Integrado Yarima"><span>Asistencia Colyarima<small>Colegio Integrado Yarima</small></span></a>
+<div class="usuario"><span class="rol">Coordinación</span><span>Coordinador de convivencia</span><span class="avatar">CO</span><a href="index.html">Salir</a></div></div></header>
+<nav class="submenu"><div class="contenedor"><ul><li><a href="c-panel.html">Panel del día</a></li><li><a href="c-amonestaciones.html">Amonestaciones por grupo</a></li><li><a href="c-estudiante.html">Ficha del estudiante</a></li><li><a href="c-excusas.html">Excusas</a></li><li><a href="c-permisos.html">Permisos</a></li><li><a href="c-reportes.html">Reportes</a></li><li><a href="c-desercion.html" class="activo">Ruta de deserción</a></li><li><a href="s-llamada.html">Llamadas</a></li><li><a href="s-bitacora.html">Bitácora</a></li></ul></div></nav>
+<main>
+<div class="cabecera-pagina" style="padding:18px 0 22px"><div class="contenedor"><h1 style="margin-top:0">Ruta de deserción · Mateo Sebastián Niño Vera</h1><p class="subtitulo">8°2 · 15 días hábiles seguidos sin asistir y sin excusa aprobada · Caso abierto el 12/11</p></div></div>
+<section><div class="contenedor rejilla r-2-1">
+<div class="tarjeta"><h3>Expediente del caso</h3>
+<ul class="linea-tiempo">
+<li class="hecho"><strong>Día 1 · Alerta al acudiente</strong> <span class="etiqueta">Automática</span><div class="fecha">12/11 · Sin excusa en 3 días hábiles: "No tramitada"</div></li>
+<li class="hecho"><strong>Día 3 · Segundo aviso al acudiente</strong> <span class="etiqueta">Automática</span><div class="fecha">14/11 · "Su acudido(a) completa 3 días sin asistir. Por favor acérquese al colegio para hablar con coordinación."</div></li>
+<li class="hecho"><strong>Día 5 · Director de grupo</strong> <span class="etiqueta azul">Seguimiento registrado</span><div class="fecha">18/11 · Llamó a la abuela: el estudiante está trabajando en la finca. Compromiso de regresar el lunes.</div></li>
+<li class="hecho"><strong>Día 10 · Docente orientadora</strong> <span class="etiqueta">Información reservada</span><div class="fecha">25/11 · Intervención registrada. <a href="o-orientacion.html">Solicitar acceso o informe</a></div></li>
+<li class="actual"><strong>Día 15 · Coordinación</strong> <span class="etiqueta rojo">Pendiente</span><div class="fecha">02/12 · Decidir acciones y, si corresponde, reportar en SIMPADE</div></li>
+</ul></div>
+<aside style="display:flex;flex-direction:column;gap:14px">
+<form class="tarjeta" action="c-desercion.html"><h3>Registrar citación</h3>
+<div class="rejilla r2" style="gap:10px"><div class="campo"><label for="cf">Fecha y hora</label><input class="input" id="cf" type="datetime-local" value="2026-12-03T08:00"></div><div class="campo"><label for="cm">Cómo se citó</label><select class="input" id="cm"><option>Llamada</option><option>Nota escrita</option><option>App</option></select></div></div>
+<div class="campo"><label>¿Asistió?</label><div class="opciones"><label class="opcion"><input type="radio" name="as"> Sí</label><label class="opcion"><input type="radio" name="as"> No</label><label class="opcion"><input type="radio" name="as" checked> Pendiente</label></div></div>
+<div class="campo"><label for="ct">Temas tratados y compromisos</label><textarea class="textarea input" id="ct" style="min-height:70px"></textarea></div>
+<div class="campo"><label>Acta firmada (foto o PDF)</label><input class="input" type="file" accept="image/*,.pdf"></div>
+<button class="btn btn-peq" type="submit">Guardar citación</button></form>
+<div class="tarjeta" style="background:var(--relleno-2)"><p style="font-size:14px">Solo cuentan los días hábiles sin excusa aprobada. Festivos, recesos e incapacidades no suman.</p></div>
+</aside>
+</div></section>
+</main>
+
+</body></html>

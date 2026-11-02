@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Configuración · Asistencia Colyarima (wireframe)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/wireframe.css">
+</head>
+<body>
+<div class="wf-franja"><div class="contenedor"><span>Wireframe v1.0 · Pantalla 27: Configuración</span><span><a href="mapa.html">Mapa del prototipo</a> · <a href="index.html">Cambiar de rol</a></span></div></div>
+<header class="appbar"><div class="contenedor"><a class="marca" href="index.html"><img class="logo-img" src="img/escudo.jpg" alt="Escudo del Colegio Integrado Yarima"><span>Asistencia Colyarima<small>Colegio Integrado Yarima</small></span></a>
+<div class="usuario"><span class="rol">Secretaría académica</span><span>Administración del sistema</span><span class="avatar">SA</span><a href="index.html">Salir</a></div></div></header>
+<nav class="submenu"><div class="contenedor"><ul><li><a href="s-estudiantes.html">Estudiantes</a></li><li><a href="s-editar.html">Ficha y matrícula</a></li><li><a href="s-carnets.html">Carnets y fotos</a></li><li><a href="c-reportes.html">Reportes</a></li><li><a href="s-llamada.html">Llamadas</a></li><li><a href="s-bitacora.html">Bitácora</a></li><li><a href="s-config.html" class="activo">Configuración</a></li></ul></div></nav>
+<main>
+<div class="cabecera-pagina" style="padding:18px 0 22px"><div class="contenedor"><h1 style="margin-top:0">Configuración</h1><p class="subtitulo">Datos que el colegio puede ajustar sin programar.</p></div></div>
+<section><div class="contenedor rejilla r2">
+<div style="display:flex;flex-direction:column;gap:16px">
+<div class="tarjeta"><h3>Calendario escolar 2027</h3>
+<table class="tabla"><tr><th>Periodo</th><th>Inicio</th><th>Fin</th></tr><tr><td>Primero</td><td><input class="input" type="date" value="2027-01-25"></td><td><input class="input" type="date" value="2027-04-02"></td></tr><tr><td>Segundo</td><td><input class="input" type="date" value="2027-04-12"></td><td><input class="input" type="date" value="2027-06-18"></td></tr></table>
+<p class="subtitulo" style="font-size:13px">+ Agregar receso escolar. Los festivos de Colombia se cargan automáticamente.</p></div>
+<div class="tarjeta"><h3>Horarios por nivel</h3>
+<table class="tabla"><tr><th>Nivel</th><th>Ingreso</th><th>Salida</th><th>Jornada única</th></tr><tr><td>Preescolar</td><td>7:00</td><td>11:00</td><td>12:00</td></tr><tr><td>Primaria</td><td>7:00</td><td>12:00</td><td>1:00 p. m.</td></tr><tr><td>Secundaria y media</td><td>7:00</td><td>12:55</td><td>1:55 p. m.</td></tr></table></div>
+<div class="tarjeta"><h3>Sedes</h3><p style="font-size:14px">A Principal · B Escuela Yarima · C Campo 50 · D Las Clavellinas · F El Paraíso · G Puerto Rico · H Los Colorados</p><p class="subtitulo" style="font-size:13px;margin:6px 0 0">Ingreso: usuario de portería abierto en un equipo de la sede A y otro de la sede B; en C a H, lista de la docente. La bitácora registra desde qué equipo se hizo cada registro.</p></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<div class="tarjeta"><h3>Reglas y alertas</h3>
+<div class="dato"><span>Reincidencia</span><span><input class="input" style="width:70px;display:inline-block" value="3"> anotaciones seguidas</span></div>
+<div class="dato"><span>Plazo de excusa</span><span><input class="input" style="width:70px;display:inline-block" value="3"> días hábiles</span></div>
+<div class="dato"><span>Ruta de deserción</span><span>3 acudiente · 5 director · 10 orientadora · 15 coordinación</span></div>
+<div class="dato"><span>Límite de fallas</span><span><input class="input" style="width:70px;display:inline-block" value="25"> % (según SIEE)</span></div></div>
+<div class="tarjeta"><h3>Autoridades que autorizan salidas</h3>
+<div class="dato"><span>Rectoría</span><span><input class="input" value="Esp. Eduardo Vásquez Rueda"></span></div>
+<div class="dato"><span>Coordinación</span><span><input class="input" value="Mg. Miguel Ángel Peñaloza"></span></div></div>
+<div class="tarjeta"><h3>Datos personales</h3><p style="font-size:14px">Política de tratamiento de datos vigente: <a href="s-config.html">politica-datos-2026.pdf</a>. Cada usuario la acepta al ingresar por primera vez y queda registrado con fecha y hora.</p></div>
+</div>
+</div></section>
+</main>
+
+</body></html>

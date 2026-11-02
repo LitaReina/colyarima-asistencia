@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reportes · Asistencia Colyarima (wireframe)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/wireframe.css">
+</head>
+<body>
+<div class="wf-franja"><div class="contenedor"><span>Wireframe v1.0 · Pantalla 22: Reportes</span><span><a href="mapa.html">Mapa del prototipo</a> · <a href="index.html">Cambiar de rol</a></span></div></div>
+<header class="appbar"><div class="contenedor"><a class="marca" href="index.html"><img class="logo-img" src="img/escudo.jpg" alt="Escudo del Colegio Integrado Yarima"><span>Asistencia Colyarima<small>Colegio Integrado Yarima</small></span></a>
+<div class="usuario"><span class="rol">Coordinación</span><span>Coordinador de convivencia</span><span class="avatar">CO</span><a href="index.html">Salir</a></div></div></header>
+<nav class="submenu"><div class="contenedor"><ul><li><a href="c-panel.html">Panel del día</a></li><li><a href="c-amonestaciones.html">Amonestaciones por grupo</a></li><li><a href="c-estudiante.html">Ficha del estudiante</a></li><li><a href="c-excusas.html">Excusas</a></li><li><a href="c-permisos.html">Permisos</a></li><li><a href="c-reportes.html" class="activo">Reportes</a></li><li><a href="c-desercion.html">Ruta de deserción</a></li><li><a href="s-llamada.html">Llamadas</a></li><li><a href="s-bitacora.html">Bitácora</a></li></ul></div></nav>
+<main>
+<div class="cabecera-pagina" style="padding:18px 0 22px"><div class="contenedor"><h1 style="margin-top:0">Reportes</h1><p class="subtitulo">Se consultan a diario; el reporte oficial para la valoración de comportamiento se genera al final de cada periodo.</p></div></div>
+<section><div class="contenedor">
+<div class="filtros"><a class="activo" href="c-reportes.html">Novedades de ingreso</a><a href="c-reportes.html">Inasistencia</a><a href="c-reportes.html">Fallas por asignatura</a><a href="c-reportes.html">Reincidencia</a><a href="c-reportes.html">Riesgo de deserción</a><a href="c-reportes.html">Salidas y llamadas</a></div>
+<form class="tarjeta" style="margin-bottom:18px" action="c-reportes.html"><div class="rejilla r4" style="gap:12px;align-items:end">
+<div class="campo" style="margin:0"><label for="r1">Desde</label><input class="input" id="r1" type="date" value="2026-10-13"></div>
+<div class="campo" style="margin:0"><label for="r2">Hasta</label><input class="input" id="r2" type="date" value="2026-11-27"></div>
+<div class="campo" style="margin:0"><label for="r3">Periodo</label><select class="input" id="r3"><option>Cuarto periodo</option><option>Personalizado</option></select></div>
+<div class="campo" style="margin:0"><label for="r4">Sede</label><select class="input" id="r4"><option>A · Principal</option><option>Todas</option></select></div>
+<div class="campo" style="margin:0"><label for="r5">Grado y grupo</label><select class="input" id="r5"><option>8°2</option><option>Todos</option></select></div>
+<div class="campo" style="margin:0"><label for="r6">Estudiante</label><input class="input" id="r6" list="estudiantes" placeholder="Todos"><datalist id="estudiantes"><option value="Ana Lucía Barrera Mora · 8°2"><option value="Camilo Andrés Duarte Rey · 8°2"><option value="Isabella Gómez Serrano · 8°2"><option value="Juan Pablo Herrera Tovar · 8°2"><option value="Laura Sofía Méndez Rueda · 8°2"><option value="Mateo Sebastián Niño Vera · 8°2"><option value="Paula Andrea Quiroga Silva · 8°2"><option value="Valentina Rojas Pinto · 8°2"><option value="Samuel Ortiz Díaz · 10°1"><option value="Kevin Andrés Cáceres León · 9°1"><option value="Daniel Esteban Vargas Quintero · 7°2"><option value="Juan José Prada Gómez · 6°2"><option value="María Fernanda Ardila Ruiz · 11°1"><option value="Mariana Rojas Pinto · 6°1"></datalist></div>
+<div class="campo" style="margin:0"><label for="r7">Tipo de novedad</label><select class="input" id="r7"><option>Todas</option><option>Llegada tarde</option><option>Sin carnet</option><option>Uniforme</option><option>Otra</option></select></div>
+<div style="display:flex;gap:8px"><button class="btn" type="submit">Generar</button><a class="btn btn-sec" href="c-reportes.html">Excel</a><a class="btn btn-sec" href="c-reportes.html">PDF</a></div>
+</div></form>
+<div class="tarjeta"><div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><h3>Grupo 8°2 · 13/10/2026 a 27/11/2026</h3><span class="subtitulo" style="margin:0;font-size:14px">Resaltados: 3 anotaciones seguidas</span></div>
+<table class="tabla"><tr><th>Estudiante</th><th>Grupo</th><th class="num">Tarde</th><th class="num">Uniforme</th><th class="num">Sin carnet</th><th class="num">Otra</th><th class="num">Fallas injust.</th><th class="num">Fallas just.</th><th>Alerta</th></tr><tr class="fila-alerta"><td>Juan Pablo Herrera Tovar</td><td>8°2</td><td class="num">2</td><td class="num">1</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">4</td><td><span class='etiqueta aviso'>3 seguidas</span></td></tr><tr><td>Mateo Sebastián Niño Vera</td><td>8°2</td><td class="num">1</td><td class="num">2</td><td class="num">0</td><td class="num">1</td><td class="num">5</td><td class="num">0</td><td></td></tr><tr><td>Valentina Rojas Pinto</td><td>8°2</td><td class="num">1</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">1</td><td class="num">1</td><td></td></tr><tr><td>Camilo Andrés Duarte Rey</td><td>8°2</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td></td></tr></table>
+<p class="subtitulo" style="font-size:13px">En <em>Fallas por asignatura</em>, cada docente ve las horas que faltó cada estudiante a su clase para pasarlas a la plataforma de notas.</p></div>
+</div></section>
+</main>
+
+</body></html>

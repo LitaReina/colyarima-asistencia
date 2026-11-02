@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dirección de grupo · Asistencia Colyarima (wireframe)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/wireframe.css">
+</head>
+<body>
+<div class="wf-franja"><div class="contenedor"><span>Wireframe v1.0 · Pantalla 24: Dirección de grupo</span><span><a href="mapa.html">Mapa del prototipo</a> · <a href="index.html">Cambiar de rol</a></span></div></div>
+<header class="appbar"><div class="contenedor"><a class="marca" href="index.html"><img class="logo-img" src="img/escudo.jpg" alt="Escudo del Colegio Integrado Yarima"><span>Asistencia Colyarima<small>Colegio Integrado Yarima</small></span></a>
+<div class="usuario"><span class="rol">Docente</span><span>Docente de Matemáticas</span><span class="avatar">DM</span><a href="index.html">Salir</a></div></div></header>
+<nav class="submenu"><div class="contenedor"><ul><li><a href="d-grupos.html">Mis grupos</a></li><li><a href="d-lista.html">Lista de clase</a></li><li><a href="d-direccion.html" class="activo">Dirección de grupo (8°2)</a></li><li><a href="s-llamada.html">Llamadas</a></li></ul></div></nav>
+<main>
+<div class="cabecera-pagina" style="padding:18px 0 22px"><div class="contenedor"><h1 style="margin-top:0">Dirección de grupo · 8°2</h1><p class="subtitulo">Asignada por secretaría académica. En las sedes rurales, la docente es directora de todos los grados de su sede.</p></div></div>
+<section><div class="contenedor rejilla r-2-1">
+<div style="display:flex;flex-direction:column;gap:16px">
+<div class="alerta rojo"><div><strong>Mateo Sebastián Niño Vera completa 5 días sin asistir.</strong> Registre la comunicación con la familia y las estrategias.</div><a class="btn btn-peq btn-peligro" href="#seg">Registrar seguimiento</a></div>
+<div class="tarjeta"><h3>Novedades del grupo esta semana</h3>
+<div class="fila-est"><span class="avatar">JP</span><div><div class="nombre">Juan Pablo Herrera Tovar</div><div class="det">3 anotaciones seguidas (llegada tarde)</div></div><span class="etiqueta aviso">Reincidencia</span></div>
+<div class="fila-est"><span class="avatar">VR</span><div><div class="nombre">Valentina Rojas Pinto</div><div class="det">Inasistencia 12/11 · excusa en revisión</div></div><span class="etiqueta azul">Excusa</span></div>
+<div class="fila-est"><span class="avatar">MN</span><div><div class="nombre">Mateo Sebastián Niño Vera</div><div class="det">5 días seguidos sin asistir</div></div><span class="etiqueta rojo">Ruta de deserción</span></div>
+</div>
+<form class="tarjeta" id="seg" action="d-direccion.html"><h3>Registrar seguimiento</h3>
+<div class="campo"><label for="sg1">Comunicación con la familia</label><input class="input" id="sg1" placeholder="Ej.: llamada a la abuela, 18/11"></div>
+<div class="campo"><label for="sg2">¿Qué le está pasando al estudiante?</label><textarea class="textarea input" id="sg2" style="min-height:70px"></textarea></div>
+<div class="campo"><label for="sg3">Estrategias y compromisos</label><textarea class="textarea input" id="sg3" style="min-height:70px"></textarea></div>
+<button class="btn btn-peq" type="submit">Guardar en el expediente</button></form>
+</div>
+<aside class="tarjeta" style="align-self:start"><h3>Charlas y actividades</h3>
+<div class="fila-est"><span class="avatar">✓</span><div><div class="nombre">Proyecto de vida</div><div class="det">Realizada 05/11 · 34 estudiantes</div></div><span class="etiqueta ok">Hecha</span></div>
+<div class="fila-est"><span class="avatar">○</span><div><div class="nombre">Importancia de la asistencia</div><div class="det">Programada 19/11</div></div><a class="btn btn-peq btn-sec" href="d-direccion.html">Marcar hecha</a></div>
+<a class="btn btn-sec btn-bloque btn-peq" style="margin-top:12px" href="d-direccion.html">+ Nueva charla</a>
+</aside>
+</div></section>
+</main>
+
+</body></html>

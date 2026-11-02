@@ -10,9 +10,9 @@
 </head>
 <body>
 <div class="wf-franja"><div class="contenedor"><span>Wireframe v1.0 · Pantalla 18: Ficha y novedades de matrícula</span><span><a href="mapa.html">Mapa del prototipo</a> · <a href="index.html">Cambiar de rol</a></span></div></div>
-<header class="appbar"><div class="contenedor"><a class="marca" href="index.html"><span class="logo-ph">LOGO</span><span>Asistencia Colyarima<small>Colegio Integrado Yarima</small></span></a>
+<header class="appbar"><div class="contenedor"><a class="marca" href="index.html"><img class="logo-img" src="img/escudo.jpg" alt="Escudo del Colegio Integrado Yarima"><span>Asistencia Colyarima<small>Colegio Integrado Yarima</small></span></a>
 <div class="usuario"><span class="rol">Secretaría académica</span><span>Administración del sistema</span><span class="avatar">SA</span><a href="index.html">Salir</a></div></div></header>
-<nav class="submenu"><div class="contenedor"><ul><li><a href="s-estudiantes.html">Estudiantes</a></li><li><a href="s-editar.html" class="activo">Ficha y novedades de matrícula</a></li><li><a href="c-amonestaciones.html">Reportes</a></li><li><a href="s-llamada.html">Llamadas</a></li></ul></div></nav>
+<nav class="submenu"><div class="contenedor"><ul><li><a href="s-estudiantes.html">Estudiantes</a></li><li><a href="s-editar.html" class="activo">Ficha y matrícula</a></li><li><a href="s-carnets.html">Carnets y fotos</a></li><li><a href="c-reportes.html">Reportes</a></li><li><a href="s-llamada.html">Llamadas</a></li><li><a href="s-bitacora.html">Bitácora</a></li><li><a href="s-config.html">Configuración</a></li></ul></div></nav>
 <main>
 <div class="cabecera-pagina" style="padding:18px 0 22px"><div class="contenedor"><h1 style="margin-top:0">Mateo Sebastián Niño Vera</h1><p class="subtitulo">Documento 1098700014 · Grado 8°2 · Estado: Activo</p></div></div>
 <section><div class="contenedor rejilla r-2-1">
@@ -22,7 +22,9 @@
 <div class="campo"><label for="e1">Nombres y apellidos</label><input class="input" id="e1" value="Mateo Sebastián Niño Vera"></div>
 <div class="campo"><label for="e2">Documento (código del carnet)</label><input class="input" id="e2" value="1098700014"></div>
 <div class="campo"><label for="e3">Grado y grupo</label><select class="input" id="e3"><option>8°2</option><option>8°1</option></select></div>
-<div class="campo"><label for="e4">Foto para portería</label><input class="input" id="e4" type="file" accept="image/*"></div>
+<div class="campo"><label for="e4">Foto (portería y carnet)</label><input class="input" id="e4" type="file" accept="image/*"></div>
+<div class="campo"><label for="e5">Sede</label><select class="input" id="e5"><option>A · Principal</option><option>B · Escuela Yarima</option><option>C · Campo 50</option><option>D · Las Clavellinas</option><option>F · El Paraíso</option><option>G · Puerto Rico</option><option>H · Los Colorados</option></select></div>
+<div class="campo"><label for="e6">Vereda o sector de residencia</label><input class="input" id="e6" placeholder="Ej.: vereda Los Colorados"></div>
 </div>
 <h3 style="margin-top:8px">Acudientes</h3>
 <table class="tabla" style="margin-bottom:10px"><tr><th>Nombre</th><th>Parentesco</th><th>Celular</th><th>Puede retirar</th><th>Recibe avisos</th></tr>

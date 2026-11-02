@@ -31,6 +31,14 @@ Autores: Liliana Reina Garzón y Jean Carlos Sandoval Rosas
 | 17 | `s-estudiantes.html` | Secretaría académica | Estudiantes |
 | 18 | `s-editar.html` | Secretaría académica | Ficha y novedades de matrícula |
 | 19 | `s-llamada.html` | Secretaría pagaduría (también coordinación, docentes y secretaría académica) | Registrar llamada al acudiente |
+| 20 | `s-carnets.html` | Secretaría académica | Carnets y fotos |
+| 21 | `c-permisos.html` | Coordinación | Permisos (uniforme, llegada tarde, salida pedagógica, novedad por vereda) |
+| 22 | `c-reportes.html` | Coordinación y secretaría académica | Reportes con rango de fechas y filtros |
+| 23 | `c-desercion.html` | Coordinación | Ruta de deserción y citaciones |
+| 24 | `d-direccion.html` | Docente (director de grupo) | Dirección de grupo |
+| 25 | `o-orientacion.html` | Docente orientadora | Casos y solicitudes |
+| 26 | `s-bitacora.html` | Coordinación y secretaría académica | Bitácora de actividad |
+| 27 | `s-config.html` | Secretaría académica | Configuración |
 | — | `notificaciones.html` | Acudiente | Aviso en el celular (vista complementaria) |
 | — | `mapa.html` | — | Mapa del prototipo |
 

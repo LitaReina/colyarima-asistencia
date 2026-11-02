@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Permisos · Asistencia Colyarima (wireframe)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/wireframe.css">
+</head>
+<body>
+<div class="wf-franja"><div class="contenedor"><span>Wireframe v1.0 · Pantalla 21: Permisos</span><span><a href="mapa.html">Mapa del prototipo</a> · <a href="index.html">Cambiar de rol</a></span></div></div>
+<header class="appbar"><div class="contenedor"><a class="marca" href="index.html"><img class="logo-img" src="img/escudo.jpg" alt="Escudo del Colegio Integrado Yarima"><span>Asistencia Colyarima<small>Colegio Integrado Yarima</small></span></a>
+<div class="usuario"><span class="rol">Coordinación</span><span>Coordinador de convivencia</span><span class="avatar">CO</span><a href="index.html">Salir</a></div></div></header>
+<nav class="submenu"><div class="contenedor"><ul><li><a href="c-panel.html">Panel del día</a></li><li><a href="c-amonestaciones.html">Amonestaciones por grupo</a></li><li><a href="c-estudiante.html">Ficha del estudiante</a></li><li><a href="c-excusas.html">Excusas</a></li><li><a href="c-permisos.html" class="activo">Permisos</a></li><li><a href="c-reportes.html">Reportes</a></li><li><a href="c-desercion.html">Ruta de deserción</a></li><li><a href="s-llamada.html">Llamadas</a></li><li><a href="s-bitacora.html">Bitácora</a></li></ul></div></nav>
+<main>
+<div class="cabecera-pagina" style="padding:18px 0 22px"><div class="contenedor"><h1 style="margin-top:0">Permisos</h1><p class="subtitulo">Solo los otorga coordinación. Vigilancia y docentes los ven al registrar al estudiante.</p></div></div>
+<section><div class="contenedor rejilla r-2-1">
+<form class="tarjeta" action="c-permisos.html">
+<div class="campo"><label>Tipo de permiso</label><div class="opciones">
+<label class="opcion"><input type="radio" name="tp" value="uniforme" checked> Uniforme</label>
+<label class="opcion"><input type="radio" name="tp" value="tarde"> Llegada tarde</label>
+<label class="opcion"><input type="radio" name="tp" value="pedagogica"> Salida pedagógica</label>
+<label class="opcion"><input type="radio" name="tp" value="vereda"> Novedad del día por vereda</label></div></div>
+<div class="campo"><label>Aplica a</label><div class="opciones"><label class="opcion"><input type="radio" name="ap" checked> Estudiantes puntuales</label><label class="opcion"><input type="radio" name="ap"> Grupo completo</label><label class="opcion"><input type="radio" name="ap"> Vereda</label></div>
+<input class="input" style="margin-top:8px" list="estudiantes" placeholder="Busque por nombre, apellido o número"><datalist id="estudiantes"><option value="Ana Lucía Barrera Mora · 8°2"><option value="Camilo Andrés Duarte Rey · 8°2"><option value="Isabella Gómez Serrano · 8°2"><option value="Juan Pablo Herrera Tovar · 8°2"><option value="Laura Sofía Méndez Rueda · 8°2"><option value="Mateo Sebastián Niño Vera · 8°2"><option value="Paula Andrea Quiroga Silva · 8°2"><option value="Valentina Rojas Pinto · 8°2"><option value="Samuel Ortiz Díaz · 10°1"><option value="Kevin Andrés Cáceres León · 9°1"><option value="Daniel Esteban Vargas Quintero · 7°2"><option value="Juan José Prada Gómez · 6°2"><option value="María Fernanda Ardila Ruiz · 11°1"><option value="Mariana Rojas Pinto · 6°1"></datalist></div>
+<div class="campo"><label for="mp">Motivo</label><select class="input" id="mp"><option>Uniforme o zapatos dañados</option><option>Situación económica</option><option>Vive en vereda lejana</option><option>Representa al colegio</option><option>Otro</option></select></div>
+<div class="rejilla r2" style="gap:16px"><div class="campo"><label for="pd">Desde</label><input class="input" id="pd" type="date" value="2026-11-12"></div><div class="campo"><label for="ph">Hasta</label><input class="input" id="ph" type="date" value="2026-11-20"></div></div>
+<button class="btn" type="submit">Otorgar permiso</button>
+</form>
+<aside class="tarjeta" style="align-self:start"><h3>Permisos vigentes</h3>
+<div class="fila-est"><span class="avatar">VR</span><div><div class="nombre">Valentina Rojas Pinto · 8°2</div><div class="det">Uniforme · zapatos dañados · hasta 20/11</div></div><span></span></div>
+<div class="fila-est"><span class="avatar">KC</span><div><div class="nombre">Kevin Andrés Cáceres León · 9°1</div><div class="det">Llegada tarde hasta 7:20 · vereda lejana · hasta 30/11</div></div><span></span></div>
+<div class="fila-est"><span class="avatar">10</span><div><div class="nombre">Grupo 10°1 (12 estudiantes)</div><div class="det">Salida pedagógica · 14/11 · no cuenta como inasistencia</div></div><span></span></div>
+<div class="fila-est"><span class="avatar">LC</span><div><div class="nombre">Vereda Los Colorados</div><div class="det">Novedad del día: derrumbe en la vía · 12/11</div></div><span></span></div>
+<p class="subtitulo" style="font-size:13px;margin-top:10px">Al vencer, el permiso se cierra solo.</p>
+</aside>
+</div></section>
+</main>
+
+</body></html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carnets y fotos · Asistencia Colyarima (wireframe)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/wireframe.css">
+</head>
+<body>
+<div class="wf-franja"><div class="contenedor"><span>Wireframe v1.0 · Pantalla 20: Carnets y fotos</span><span><a href="mapa.html">Mapa del prototipo</a> · <a href="index.html">Cambiar de rol</a></span></div></div>
+<header class="appbar"><div class="contenedor"><a class="marca" href="index.html"><img class="logo-img" src="img/escudo.jpg" alt="Escudo del Colegio Integrado Yarima"><span>Asistencia Colyarima<small>Colegio Integrado Yarima</small></span></a>
+<div class="usuario"><span class="rol">Secretaría académica</span><span>Administración del sistema</span><span class="avatar">SA</span><a href="index.html">Salir</a></div></div></header>
+<nav class="submenu"><div class="contenedor"><ul><li><a href="s-estudiantes.html">Estudiantes</a></li><li><a href="s-editar.html">Ficha y matrícula</a></li><li><a href="s-carnets.html" class="activo">Carnets y fotos</a></li><li><a href="c-reportes.html">Reportes</a></li><li><a href="s-llamada.html">Llamadas</a></li><li><a href="s-bitacora.html">Bitácora</a></li><li><a href="s-config.html">Configuración</a></li></ul></div></nav>
+<main>
+<div class="cabecera-pagina" style="padding:18px 0 22px"><div class="contenedor"><h1 style="margin-top:0">Carnets y fotos</h1><p class="subtitulo">Cargue las fotos, ajuste el diseño y descargue los carnets en JPG de alta resolución para imprimir.</p></div></div>
+<section><div class="contenedor rejilla r2">
+<div style="display:flex;flex-direction:column;gap:16px">
+<form class="tarjeta" action="s-carnets.html"><h3>1. Cargar fotos</h3>
+<p class="subtitulo" style="font-size:14px;margin:0 0 10px">Seleccione varias fotos a la vez. Cada archivo debe llamarse con el número del estudiante (ej.: 1098700014.jpg).</p>
+<div class="adjunto">Arrastre aquí las fotos o la carpeta<input type="file" accept="image/*" multiple></div>
+<div class="rejilla r3" style="gap:8px;margin-top:12px"><div class="kpi verde" style="padding:10px"><div class="n" style="font-size:22px">712</div><div class="t">Asignadas</div></div><div class="kpi ambar" style="padding:10px"><div class="n" style="font-size:22px">6</div><div class="t">Sin estudiante</div></div><div class="kpi rojo" style="padding:10px"><div class="n" style="font-size:22px">32</div><div class="t">Estudiantes sin foto</div></div></div>
+<a href="s-carnets.html" style="display:inline-block;margin-top:10px;font-size:14px">Asignar a mano las 6 fotos sin estudiante →</a>
+</form>
+<form class="tarjeta" action="s-carnets.html"><h3>2. Diseño del carnet</h3>
+<div class="rejilla r2" style="gap:12px">
+<div class="campo"><label>Orientación</label><div class="opciones"><label class="opcion"><input type="radio" name="or" checked> Horizontal</label><label class="opcion"><input type="radio" name="or"> Vertical</label></div></div>
+<div class="campo"><label for="ff">Fondo del frente</label><input class="input" id="ff" type="file" accept="image/*"></div>
+</div>
+<div class="campo"><label for="fr">Reverso (es el mismo para todos)</label><input class="input" id="fr" type="file" accept="image/*"><p class="ayuda">Reverso guardado: reverso-2026.jpg · Cargado el 20/01/2026</p></div>
+<p class="subtitulo" style="font-size:13px;margin:0">Datos del frente: foto, nombre y apellido, grado, sede, escudo y código de barras con el número del estudiante. Cada dato se puede mover sobre la vista previa.</p>
+</form>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<div class="tarjeta"><h3>Vista previa</h3>
+<div class="carnet"><div class="carnet-cab"><img src="img/escudo.jpg" alt="Escudo"><div><strong>COLEGIO INTEGRADO YARIMA</strong><span>San Vicente de Chucurí · Santander</span></div></div>
+<div class="carnet-cuerpo"><div class="img-ph carnet-foto"><span>Foto</span></div><div class="carnet-datos"><strong>MATEO SEBASTIÁN<br>NIÑO VERA</strong><span>Grado 8°2</span><span>Sede A · Principal</span><span>Estudiante 2026</span></div></div>
+<div class="carnet-barras"><div><i style="width:2px"></i><i style="width:1px"></i><i style="width:3px"></i><i style="width:1px"></i><i style="width:2px"></i><i style="width:2px"></i><i style="width:1px"></i><i style="width:3px"></i><i style="width:1px"></i><i style="width:1px"></i><i style="width:2px"></i><i style="width:3px"></i><i style="width:1px"></i><i style="width:2px"></i><i style="width:1px"></i><i style="width:1px"></i><i style="width:3px"></i><i style="width:2px"></i><i style="width:1px"></i><i style="width:2px"></i><i style="width:1px"></i><i style="width:3px"></i><i style="width:1px"></i><i style="width:2px"></i><i style="width:2px"></i><i style="width:1px"></i><i style="width:1px"></i><i style="width:3px"></i><i style="width:2px"></i><i style="width:1px"></i></div><span>1098700014</span></div></div>
+<p class="subtitulo" style="font-size:13px;margin:10px 0 0">Tamaño estándar 8,56 × 5,4 cm · Exportación a 600 dpi (2.022 × 1.276 px)</p></div>
+<form class="tarjeta" action="s-carnets.html"><h3>3. Descargar</h3>
+<div class="rejilla r2" style="gap:12px"><div class="campo"><label for="sd">Sede</label><select class="input" id="sd"><option>A · Principal</option><option>Todas</option></select></div><div class="campo"><label for="gd">Grupo</label><select class="input" id="gd"><option>8°2</option><option>Todos</option></select></div></div>
+<div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn" href="s-carnets.html">Descargar frentes (.zip de JPG)</a><a class="btn btn-sec" href="s-carnets.html">Descargar reverso (JPG)</a></div>
+<p class="ayuda" style="margin-top:8px;font-size:13px;color:var(--tinta-2)">Un archivo JPG por estudiante, nombrado con su número.</p>
+</form>
+</div>
+</div></section>
+</main>
+
+</body></html>

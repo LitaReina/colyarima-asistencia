@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casos y solicitudes · Asistencia Colyarima (wireframe)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/wireframe.css">
+</head>
+<body>
+<div class="wf-franja"><div class="contenedor"><span>Wireframe v1.0 · Pantalla 25: Casos y solicitudes</span><span><a href="mapa.html">Mapa del prototipo</a> · <a href="index.html">Cambiar de rol</a></span></div></div>
+<header class="appbar"><div class="contenedor"><a class="marca" href="index.html"><img class="logo-img" src="img/escudo.jpg" alt="Escudo del Colegio Integrado Yarima"><span>Asistencia Colyarima<small>Colegio Integrado Yarima</small></span></a>
+<div class="usuario"><span class="rol">Orientación escolar</span><span>Docente orientadora</span><span class="avatar">DO</span><a href="index.html">Salir</a></div></div></header>
+<nav class="submenu"><div class="contenedor"><ul><li><a href="o-orientacion.html" class="activo">Casos y solicitudes</a></li><li><a href="c-desercion.html">Ruta de deserción</a></li><li><a href="s-llamada.html">Llamadas</a></li></ul></div></nav>
+<main>
+<div class="cabecera-pagina" style="padding:18px 0 22px"><div class="contenedor"><h1 style="margin-top:0">Orientación escolar</h1><p class="subtitulo">Sus notas son reservadas: solo usted las ve. Coordinación puede solicitar acceso o un informe.</p></div></div>
+<section><div class="contenedor rejilla r-2-1">
+<div style="display:flex;flex-direction:column;gap:16px">
+<div class="tarjeta"><h3>Casos remitidos (10 días sin asistir)</h3>
+<div class="fila-est"><span class="avatar">MN</span><div><div class="nombre">Mateo Sebastián Niño Vera · 8°2</div><div class="det">Seguimiento del director: trabaja en la finca familiar</div></div><a class="btn btn-peq btn-sec" href="c-desercion.html">Ver expediente</a></div></div>
+<form class="tarjeta" action="o-orientacion.html"><h3>Notas reservadas de intervención</h3>
+<textarea class="textarea input" style="min-height:110px" placeholder="Solo usted puede ver estas notas"></textarea>
+<button class="btn btn-peq" style="margin-top:10px" type="submit">Guardar</button></form>
+</div>
+<aside style="display:flex;flex-direction:column;gap:14px">
+<div class="tarjeta"><h3>Solicitudes de coordinación</h3>
+<p style="font-size:14px">Coordinación solicita información del caso de Mateo Sebastián Niño Vera (02/12).</p>
+<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px"><a class="btn btn-peq" href="o-orientacion.html">Dar acceso</a><a class="btn btn-peq btn-sec" href="o-orientacion.html">Enviar informe aparte</a><a class="btn btn-peq btn-sec" href="o-orientacion.html">No autorizar</a></div></div>
+<div class="tarjeta"><h3>Charlas de prevención</h3><ul class="lista-simple"><li>Prevención de la deserción · 9°1 · hecha 07/11</li><li>Manejo de emociones · 6°2 · programada 21/11</li></ul></div>
+</aside>
+</div></section>
+</main>
+
+</body></html>

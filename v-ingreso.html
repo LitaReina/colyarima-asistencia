@@ -10,11 +10,11 @@
 </head>
 <body>
 <div class="wf-franja"><div class="contenedor"><span>Wireframe v1.0 · Pantalla 02: Registro de ingreso</span><span><a href="mapa.html">Mapa del prototipo</a> · <a href="index.html">Cambiar de rol</a></span></div></div>
-<header class="appbar"><div class="contenedor"><a class="marca" href="index.html"><span class="logo-ph">LOGO</span><span>Asistencia Colyarima<small>Colegio Integrado Yarima</small></span></a>
+<header class="appbar"><div class="contenedor"><a class="marca" href="index.html"><img class="logo-img" src="img/escudo.jpg" alt="Escudo del Colegio Integrado Yarima"><span>Asistencia Colyarima<small>Colegio Integrado Yarima</small></span></a>
 <div class="usuario"><span class="rol">Vigilancia</span><span>Portería</span><span class="avatar">VP</span><a href="index.html">Salir</a></div></div></header>
 <nav class="submenu"><div class="contenedor"><ul><li><a href="v-ingreso.html" class="activo">Registro de ingreso</a></li><li><a href="v-novedad.html">Registrar novedad</a></li><li><a href="v-cierre.html">Cierre de ingreso</a></li><li><a href="v-salida.html">Salida anticipada</a></li></ul></div></nav>
 <main>
-<div class="cabecera-pagina" style="padding:18px 0 22px"><div class="contenedor"><h1 style="margin-top:0">Registro de ingreso</h1><p class="subtitulo">Jornada única · Jueves 12 de noviembre · El ingreso se cierra a las 7:00 a. m.</p></div></div>
+<div class="cabecera-pagina" style="padding:18px 0 22px"><div class="contenedor"><h1 style="margin-top:0">Registro de ingreso</h1><p class="subtitulo">Sede A (principal) · Jornada única · Jueves 12 de noviembre · El ingreso se cierra a las 7:00 a. m.</p></div></div>
 <section><div class="contenedor rejilla r2">
 <div>
 <form class="escaner" action="v-ingreso.html" method="get">
@@ -26,7 +26,7 @@
 </form>
 <div class="tarjeta" style="margin-top:18px">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px"><h3 style="margin:0">Último registro</h3><span class="etiqueta ok" id="est">A tiempo · 6:38 a. m.</span></div>
-<div class="registro"><div class="img-ph"><span>Foto</span></div><div><p style="font-size:20px;font-weight:700" id="nom">Valentina Rojas Pinto</p><p class="subtitulo" style="margin:2px 0 0;font-size:15px">Grado 8°2 · Usuario 1098765432</p><p class="subtitulo" style="margin:6px 0 0;font-size:14px">Acudiente notificado del ingreso ✓</p></div></div>
+<div class="registro"><div class="img-ph"><span>Foto</span></div><div><p style="font-size:20px;font-weight:700" id="nom">Valentina Rojas Pinto</p><p class="subtitulo" style="margin:2px 0 0;font-size:15px">Grado 8°2 · Usuario 1098765432</p><p style="margin:8px 0 0"><span class="etiqueta">Permiso de uniforme hasta 20/11</span></p></div></div>
 </div>
 </div>
 <div>
@@ -39,11 +39,12 @@
 <a class="btn-novedad" href="v-novedad.html?tipo=otra">Otra novedad</a>
 </div>
 <div class="rejilla r3" style="margin-top:20px;gap:10px">
-<div class="kpi verde"><div class="n">412</div><div class="t">Ingresaron</div></div>
-<div class="kpi rojo"><div class="n">36</div><div class="t">Faltan por ingresar</div></div>
+<div class="kpi verde"><div class="n">372</div><div class="t">Ingresaron (sede A)</div></div>
+<div class="kpi rojo"><div class="n">28</div><div class="t">Faltan por ingresar</div></div>
 <div class="kpi ambar"><div class="n">9</div><div class="t">Novedades hoy</div></div>
 </div>
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px"><a class="btn btn-sec" href="v-cierre.html">Cierre de ingreso</a><a class="btn btn-sec" href="v-salida.html">Salida anticipada</a></div>
+<a class="btn-novedad" style="display:block;margin-top:14px;border-color:var(--linea);background:var(--relleno-2);color:var(--tinta)" href="v-cierre.html">☂ Marcar "Ingreso sin control" hoy (lluvia u otra causa)</a>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px"><a class="btn btn-sec" href="v-cierre.html">Cierre de ingreso</a><a class="btn btn-sec" href="v-salida.html">Salida anticipada</a></div>
 </div>
 </div></section>
 </main>
